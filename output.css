@@ -1409,6 +1409,10 @@ video {
   background-image: url('../images/rectangle_4.png');
 }
 
+.bg-\[url\(\'https\:\/\/kalaiselvan37\.github\.io\/rasassi\/images\/rectangle_4\.png\'\)\] {
+  background-image: url('https://kalaiselvan37.github.io/rasassi/images/rectangle_4.png');
+}
+
 .bg-repeat {
   background-repeat: repeat;
 }
