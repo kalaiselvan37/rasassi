@@ -1401,6 +1401,10 @@ video {
   background-image: url('/images/rectangle_4.png');
 }
 
+.bg-\[url\(\'\.\/images\/rectangle_4\.png\'\)\] {
+  background-image: url('./images/rectangle_4.png');
+}
+
 .bg-repeat {
   background-repeat: repeat;
 }
