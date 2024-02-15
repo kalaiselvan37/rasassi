@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  },
+  "dependencies": {
+    "@flaticon/flaticon-uicons": "^3.1.0",
+    "font-awesome": "^4.7.0",
+    "tailwindcss-animated": "^1.0.1"
+  }
+}

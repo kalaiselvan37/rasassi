@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.cut-image{
+    clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+}
+.bg-repeat {
+    background-repeat: repeat-x; 
+    background-size: auto 100%;
+}

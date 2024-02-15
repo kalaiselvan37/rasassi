@@ -1,0 +1,470 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="./node_modules/@flaticon/flaticon-uicons/css/all/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Rasassi</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const toggleButton = document.getElementById('toggleButton');
+            const navbar = document.getElementById('navbar-default');
+
+            toggleButton.addEventListener('click', function() {
+                navbar.classList.toggle('hidden');
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="flex flex-col min-h-screen">
+        <header class="bg-white max-w-4xl">   
+            <nav class="bg-white border-gray-200 dark:bg-gray-900">
+                <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                    <img src="/images/logo.png" class="h-10 mx-3" alt="Flowbite Logo" />
+                    <button id="toggleButton" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                        </svg>
+                    </button>
+                    <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                        <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                            <li>
+                                <a href="#" class="block py-2 px-3 text-black bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500 text-xl" aria-current="page">Home</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent text-xl">Menu</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent text-xl">Contact</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent text-xl">Reserve Now</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        
+        <div class="absolute overflow-hidden top-0 right-0 bg-[url('/images/rectangle_4.png')] w-full md:w-[850px] h-[1100px]
+         bg-no-repeat hidden md:block">
+        </div>
+        <section class="relative md:top-5">
+            <div class="max-w-[50rem] mx-auto px-4 h-screen">
+                <div class="absolute lg:top-[300px] lg:left-[300px]  left-[120px] top-[270px]">
+                    <p class="text-3xl md:text-center font-semibold bg-orange-300 p-2 leading-0">Experience</p>
+                </div>
+                <div class="absolute top-[370px] lg:left-[300px]"> <img src="/images/the_real_taste.png" alt=""></div>
+                <div class="absolute top-[460px] lg:left-[300px] text-center">
+                    <p class="text-9xl font-extrabold text-lime-600">India</p>
+                    <img src="/images/tasty-tandoori-chicken-plate.png" class=" lg:hidden mt-4" alt="">
+                </div>
+                <div class="absolute top-[750px] left-[1290px] animate-fade-up animate-twice animate-ease-out"> <img
+                        src="/images/tasty-tandoori-chicken-plate.png" alt=""> </div>
+                <div class="absolute top-[70px] left-[1020px] animate-pulse animate-infinite animate-ease-linear"> <img
+                        src="/images/layer_22.png" alt=""> </div>
+                <div class="absolute top-[170px] left-[650px] "> <img src="/images/layer_16.png" alt=""> </div>
+                <div class="absolute top-[170px] left-[380px] hidden md:block">
+                    <img src="/images/food-3.gif" alt=""> </div>
+                <div class="absolute top-[330px] left-[720px] animate-wiggle-more animate-infinite animate-ease-out">
+                    <img src="/images/layer_28.png" alt=""> </div>
+                <div class="absolute top-[250px] left-[60px] hidden md:block"> <img src="/images/food-2.gif" alt="">
+                </div>
+                <div
+                    class="absolute top-[450px] left-[100px] animate-wiggle-more animate-infinite animate-ease-out hidden md:block">
+                    <img src="/images/layer_25.png" alt=""> </div>
+                <div class="absolute top-[730px] left-[60px] hidden md:block"> <img src="/images/layer_18.png" alt="">
+                </div>
+                <div
+                    class="absolute top-[650px] left-[460px] animate-flip-up animate-infinite animate-delay-[10ms] animate-ease-out animate-alternate-reverse">
+                    <img src="/images/layer_20.png" alt=""> </div>
+                <div class="absolute top-[700px] left-[220px] hidden md:block"> <img src="/images/layer_27.png" alt="">
+                </div>
+                <div class="absolute top-[530px] left-[650px] animate-jump-in animate-infinite animate-ease-linear">
+                    <img src="/images/layer_24.png" alt=""> </div>
+                <div class="absolute top-[545px] left-[650px] animate-jump-in animate-infinite animate-ease-linear">
+                    <img src="/images/layer_24_copy.png" alt=""> </div>
+                <div class="absolute top-[670px] left-[700px]"> <img src="/images/layer_23.png" alt=""> </div>
+                <div class="absolute top-[600px] left-[1000px]"> <img src="/images/layer_21.png" alt=""> </div>
+                <div class="absolute top-[770px] left-[350px] hidden md:block">
+                    <img src="/images/food-1.gif" alt=""> </div>
+                <div class="absolute top-[800px] left-[700px]"> <img src="/images/layer_26.png" alt=""> </div>
+                <div class="absolute top-[800px] left-[1100px]"> <img src="/images/layer_17.png" alt=""> </div>
+
+        </section>
+    </div>
+    </div>
+    </div>
+    <!-- Food and order now  -->
+    <section class="lg:py-20 ">
+        <div class="max-w-[85rem] mx-auto px-4">
+            <div class="text-2xl font-semibold">Popular Dishes</div>
+            <div class="text-5xl mb-4 font-extrabold relative">
+                <span class="absolute inset-x-0 bottom-0 h-4 w-32 bg-yellow-400"></span>
+                <span class="relative z-10 text-black">Our Exclusive Items</span>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 space-y-6 xl:space-y-0">
+                <div class="relative rounded-lg">
+                    <div class="absolute z-10 cut-image rounded-lg overflow-hidden">
+                        <img src="/images/Layer10.png"
+                            class="scale-100 hover:scale-110 h-full w-full object-cover rounded-tl-lg rounded-tr-lg">
+                    </div>
+                    <div class="relative top-8">
+                        <img src="/images/Rectangle 8 copy.png">
+                    </div>
+                    <div class="absolute right-5 -bottom-2 md:bottom-0 text-xl">
+                        <a href="https://rasassionline.com/">
+                            <img src="/images/order_now.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="relative rounded-lg">
+                    <div class="absolute z-10 cut-image rounded-lg overflow-hidden">
+                        <img src="/images/foodmaterial.png"
+                            class="scale-100 hover:scale-110 h-full w-full object-cover rounded-tl-lg rounded-tr-lg">
+                    </div>
+                    <div class="relative top-8">
+                        <img src="/images/Rectangle 8 copy.png">
+                    </div>
+                    <div class="absolute right-5 -bottom-2 md:bottom-0 text-xl">
+                        <a href="https://rasassionline.com/">
+                           <img src="/images/order_now.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="relative rounded-lg">
+                    <div class="absolute z-10 cut-image rounded-lg overflow-hidden">
+                        <img src="/images/foodmaterial1.png"
+                            class="scale-100 hover:scale-110 h-full w-full object-cover rounded-tl-lg rounded-tr-lg">
+                    </div>
+                    <div class="relative top-8">
+                        <img src="/images/Rectangle 8 copy.png">
+                    </div>
+                    <div class="absolute right-5 -bottom-2 md:bottom-0 text-xl">
+                        <a href="https://rasassionline.com/">
+                            <img src="/images/order_now.png" alt="">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- Welcome to resassi -->
+    <section class="">
+        <div class="max-h-full px-4 ">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 space-x-5 space-y-5 bg-black gap-0 ">
+                <div class="relative rounded-lg py-5 ">
+                    <div class="hidden lg:block absolute z-40   overflow-hidden left-[36rem] top-[33rem]">
+                        <img src="/images/table-dishes.png" class="scale-100 rounded-full border-2 border-yellow-400  w-[200px]  h-[200px]  object-cover ">
+                      </div>
+                      <div class="hidden lg:block absolute z-20   overflow-hidden left-[600px] top-[540px]">
+                        <div  class="scale-100 rounded-full border-2 border-dashed border-yellow-400  w-[195px]  h-[195px]  object-cover "></div>
+                      </div>
+                      <div class="hidden lg:block absolute z-20   overflow-hidden left-[565px] top-[10px]">
+                        <div  class="scale-100 rounded-full border-2 border-dashed border-yellow-400  w-[175px]  h-[175px]  object-cover "></div>
+                      </div>
+                      <div class="hidden lg:block absolute z-40   overflow-hidden left-[34rem] top-4">
+                        <img src="/images/table-dishes.png" class=" rounded-full object-cover border-2 border-yellow-400  w-[180px]  h-[180px] ">
+                      </div>
+                      <div class="hidden lg:block absolute z-0   overflow-hidden left-[530px] top-[25px]">
+                        <div  class="scale-100 rounded-full border-2  border-yellow-400  w-[48px]  h-[48px]  object-cover "></div>
+                      </div>
+                      <div class="hidden lg:block absolute z-0   overflow-hidden left-[570px] top-[670px]">
+                        <div  class="scale-100 rounded-full border-2  border-yellow-400  w-[80px]  h-[80px]  object-cover "></div>
+                      </div>
+                      <div class="relative p-0 z-10">
+                        <img src="/images/group-members.png" class="border-2 rounded-r-full w-[350px] h-[500px]  lg:w-[750px] lg:h-[750px]   border-yellow-400 border-l-0">
+                      </div>
+                </div>
+                <div class="flex justify-center align-middle py-5 px-0 md:py-2">
+                  <div class="px-5 lg:px-24">
+                  <h2 class="text-yellow-400 font-bold text-2xl pb-3">OUR RESTAURANT</h2>
+                  <img src="/images/welcome_to_rasassi.png" class="mb-2" alt="">
+                    <h2  class="text-yellow-400 font-bold text-2xl  pb-4 ">GOOD FOOD & GREAT VIBES</h2>
+                    <p class="text-white pb-2 text-2xl">The term <a class="text-yellow-400" href="">"Rasassi" </a> is derived from the 15th-century word <a class="text-yellow-400">"Rasassi" </a>, which means to satisfy one's hunger, and <a class="text-yellow-400">"Rasassi" </a> someone" means to satisfy someone with a delicious meal. </p>
+                      <p class="text-white ">
+                        <a class="text-yellow-400 text-2xl italic" href="">Our mission</a><span class="text-2xl"> is to provide a unique and relaxing dining experience at a premier home-style dining restaurant, similar to dining at home.</span></h3>
+                       <h3 class="text-white pb-2 text-2xl">Whatever the season, we have access to the very best suppliers who can provide us with the best quality meat, fish, and vegetables we use in our cooking. </h3>
+                       <h3 class="text-white pb-2 text-2xl">So if you want to visit the best restaurant in Altrincham and satisfy your hunger, take a look at our menu now.</h3>
+                            <div class="lg:px-14">
+                       <img src="/images/we_speak_the_good_food_la.png" class="p-3 "  alt="">
+                       <img src="/images/the_only_thing_we_re_seri.png" class="p-3" alt="">
+    
+                       <img src="/images/the_good_side_of_the_food.png" class="p-3" alt="">   
+                    </div>
+                          
+                      </div>
+              </div>
+        </div>
+        </div>
+    </section>
+    <!-- Dinner and Input Table -->
+    <section class="py-20 ">
+        <div class="max-w-[85rem] mx-auto px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 space-y-6 md:space-y-0">
+                <div> <img src="/images/table.png" alt=""> </div>
+                <iframe src="https://widget.thefork.com/cd4f8d58-5ca3-4626-9d9a-ab8e5e1351d1"
+                    class="h-[500px] w-full rounded-2xl shadow-lg" allow="payment *" style="overflow: scroll;"></iframe>
+                <div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Restaurant card -->
+    <section class="py-20 ">
+        <div class="max-w-[85rem] mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 space-y-6 xl:space-y-0">
+                <div class="relative rounded-lg flex justify-center">
+                    <div class="absolute z-20  w-[350px] h-[900px] overflow-hidden">
+                        <img src="/images/cardpic1.png"
+                            class="scale-100 rounded-b-full h-[350px] hover:scale-110 hover:rounded-b-full  object-cover ">
+                    </div>
+                    <div class="absolute z-10  overflow-hidden">
+                        <img src="/images/background2round.png" class=" rounded-lg object-cover ">
+                    </div>
+                    <div class="relative top-8">
+                        <img src="/images/background2card.png">
+                    </div>
+                    <div class="absolute z-10 top-[400px]  md:bottom-0 text-xl">
+                        <div class="">
+                            <div class="flex justify-center text-yellow-400 font-extrabold text-4xl pb-5">Parties</div>
+                            <div class="flex justify-center w-80 text-white"> You can reserve the space for parties
+                                and have the best memories with
+                                your loved ...</div>
+                        </div>
+                    </div>
+                    <div class="absolute right-3 -bottom-0 md:bottom-0 text-xl">
+                        <div class="text-black font-bold text-2xl flex my-4 ">
+                            Contact Us
+                            <button role="button" class="pl-1"><i class="fa-solid fa-circle-chevron-right"
+                                    style="color: #ffffff;"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative rounded-lg flex justify-center">
+                    <div class="absolute z-20  w-[350px] h-[900px] overflow-hidden">
+                        <img src="/images/restaurant.png"
+                            class="scale-100 rounded-b-full h-[350px] hover:scale-110 hover:rounded-b-full  object-cover ">
+                    </div>
+                    <div class="absolute z-10  overflow-hidden">
+                        <img src="/images/background2round.png" class=" rounded-lg object-cover ">
+                    </div>
+                    <div class="relative top-8">
+                        <img src="/images/background2card.png">
+                    </div>
+                    <div class="absolute z-10 top-[400px]  md:bottom-0 text-xl">
+                        <div class="">
+                            <div class="flex justify-center text-yellow-400 font-extrabold text-4xl pb-5">Outdoor
+                                Catering</div>
+                            <div class="flex justify-center  w-80 text-white"> With keen obligation towards
+                                excellence, we have been engrossed
+                                in the realm of delivering to ...</div>
+                        </div>
+                    </div>
+                    <div class="absolute right-3 -bottom-0 md:bottom-0 text-xl">
+                        <div class="text-black font-bold text-2xl my-4">
+                            Contact Us
+                            <button role="button" class="pl-1"><i class="fa-solid fa-circle-chevron-right"
+                                    style="color: #ffffff;"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative rounded-lg flex justify-center">
+                    <div class="absolute z-20  w-[350px] h-[900px] overflow-hidden">
+                        <img src="/images/restaurant1.png"
+                            class="scale-100 rounded-b-full h-[350px] w-full hover:scale-110 hover:rounded-b-full  object-cover ">
+                    </div>
+                    <div class="absolute z-10  overflow-hidden">
+                        <img src="/images/background2round.png" class=" rounded-lg object-cover ">
+                    </div>
+                    <div class="relative top-8">
+                        <img src="/images/background2card.png">
+                    </div>
+                    <div class="absolute z-10 top-[400px]  md:bottom-0 text-xl">
+                        <div class="">
+                            <div class="flex justify-center text-yellow-400 font-extrabold text-4xl pb-5">Fine Dining
+                            </div>
+                            <div class="flex justify-center w-80 text-white"> An ambiance of relaxed
+                                sophistication and a comfortable
+                                environment make Rasassi a place
+                                where you ...</div>
+                        </div>
+                    </div>
+                    <div class="absolute right-3 -bottom-0 md:bottom-0 text-xl">
+                        <div class="text-black font-bold text-2xl my-4">
+                            Contact Us
+                            <button role="button" class="pl-1"><i class="fa-solid fa-circle-chevron-right"
+                                    style="color: #ffffff;"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-20 bg-black">
+        <div class="max-w-[85rem] mx-auto   ">
+          <div class="text-center ">
+            <h1 class="text-white p-2">Excellent</h1>
+            <div class="flex justify-center pb-2"> <i class="fa-solid fa-circle " style="color: #3fc881;"></i><i class="fa-solid fa-circle" style="color: #3fc881;"></i><i class="fa-solid fa-circle" style="color: #3fc881;"></i><i class="fa-solid fa-circle" style="color: #3fc881;"></i><i class="fa-regular fa-circle" style="color: #3fc881;"></i></div>
+            <h1 class="text-white ">Based on 381 Reviews</h1>
+            <h1 class="text-white "><i class="fa-brands fa-discord" style="color: #114f2f;"></i>Tripadviser</h1>
+    
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 space-y-6 xl:space-y-0 p-5  ">
+            <div class="mx-w-sm py-3 px-3 bg-white rounded-lg ">
+              <h1 class="text-2xl"><i class="fa-solid fa-circle-user fa-2xl" style="color: #f4810e;"></i>User1</h1>
+              <h6 class="pl-6 pt-1">11-02-2024</h6>
+              <div class="pl-6"> <i class="fa-solid fa-circle " style="color: #114f2f;"></i><i class="fa-solid fa-circle" style="color: #114f2f;"></i><i class="fa-solid fa-circle" style="color: #114f2f;"></i><i class="fa-solid fa-circle" style="color: #114f2f;"></i><i class="fa-regular fa-circle" style="color: #114f2f;"></i></div>
+               <p>tasty meal and excellent service we had a lovely meal tonight.ecery dish. A wide range of dishes with excellent flavours. Staff attentive and friendly as well.</p>
+              
+            </div>
+            <div class="mx-w-sm py-3 px-3 bg-white rounded-lg ">
+              <h1 class="text-2xl"><i class="fa-solid fa-circle-user fa-2xl" style="color: #b1a30e;"></i>User2</h1>
+              <h6 class="pl-6 pt-1">11-02-2024</h6>
+              <div class="pl-6"> <i class="fa-solid fa-circle " style="color: #114f2f;"></i><i class="fa-solid fa-circle" style="color: #114f2f;"></i><i class="fa-solid fa-circle" style="color: #114f2f;"></i><i class="fa-solid fa-circle" style="color: #114f2f;"></i><i class="fa-regular fa-circle" style="color: #114f2f;"></i></div>
+               <p>tasty meal and excellent service we had a lovely meal tonight.ecery dish. A wide range of dishes with excellent flavours. Staff attentive and friendly as well.</p>
+              
+            </div>
+            <div class="mx-w-sm py-3 px-3 bg-white rounded-lg ">
+              <h1 class="text-2xl"><i class="fa-solid fa-circle-user fa-2xl" style="color: #45df2d;"></i>User3</h1>
+              <h6 class="pl-6 pt-1">11-02-2024</h6>
+              <div class="pl-6"> <i class="fa-solid fa-circle " style="color: #114f2f;"></i><i class="fa-solid fa-circle" style="color: #114f2f;"></i><i class="fa-solid fa-circle" style="color: #114f2f;"></i><i class="fa-solid fa-circle" style="color: #114f2f;"></i><i class="fa-regular fa-circle" style="color: #114f2f;"></i></div>
+               <p>tasty meal and excellent service we had a lovely meal tonight.ecery dish. A wide range of dishes with excellent flavours. Staff attentive and friendly as well.</p>
+              
+            </div>
+          </div>
+       
+    
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 space-y-6 xl:space-y-0 p-5 ">
+            <div class="text-center py-10">
+              <h1 class="text-white p-2">Excellent</h1>
+              <div class="flex justify-center pb-2"> <i class="fa-solid fa-star" style="color: #e39b35;"></i><i class="fa-solid fa-star" style="color: #e39b35;"></i><i class="fa-solid fa-star" style="color: #e39b35;"></i><i class="fa-solid fa-star" style="color: #e39b35;"></i><i class="fa-regular fa-star" style="color: #e39b35;"></i></div>
+              <h1 class="text-white ">Based on 284 Reviews</h1>
+              <p class="text-white ">powered by <a class="text-blue-500" href="">g</a><a class="text-red-500" href="">o</a><a class="text-yellow-600" href="">o</a><a class="text-blue-500" href="">g</a><a class="text-green-500" href="">l</a><a class="text-red-500" href="">e</a></p>
+      
+            </div>
+            <div class="mx-w-sm py-3 px-3 bg-white rounded-lg ">
+              <h1 class="text-2xl"><i class="fa-solid fa-circle-user fa-2xl" style="color: #e01010;"></i>User1</h1>
+              <h6 class="pl-6 pt-1">11-02-2024</h6>
+              <div class="pl-6"> <i class="fa-solid fa-star" style="color: #e39b35;"></i><i class="fa-solid fa-star" style="color: #e39b35;"></i><i class="fa-solid fa-star" style="color: #e39b35;"></i><i class="fa-solid fa-star" style="color: #e39b35;"></i><i class="fa-regular fa-star" style="color: #e39b35;"></i></div>           <p>tasty meal and excellent service we had a lovely meal tonight.ecery dish. A wide range of dishes with excellent flavours. Staff attentive and friendly as well.</p>
+              
+            </div>
+            <div class="mx-w-sm py-3 px-3 bg-white rounded-lg ">
+              <h1 class="text-2xl"><i class="fa-solid fa-circle-user fa-2xl" style="color: #ff2bd5;"></i>User2</h1>
+              <h6 class="pl-6 pt-1">11-02-2024</h6>
+              <div class="pl-6"> <i class="fa-solid fa-star" style="color: #e39b35;"></i><i class="fa-solid fa-star" style="color: #e39b35;"></i><i class="fa-solid fa-star" style="color: #e39b35;"></i><i class="fa-solid fa-star" style="color: #e39b35;"></i><i class="fa-regular fa-star" style="color: #e39b35;"></i></div>           <p>tasty meal and excellent service we had a lovely meal tonight.ecery dish. A wide range of dishes with excellent flavours. Staff attentive and friendly as well.</p>
+              
+            </div>
+            <div class="mx-w-sm py-3 px-3 bg-white rounded-lg ">
+              <h1 class="text-2xl"><i class="fa-solid fa-circle-user fa-2xl" style="color: #3c1eeb;"></i>User3</h1>
+              <h6 class="pl-6 pt-1">11-02-2024</h6>
+              <div class="pl-6"> <i class="fa-solid fa-star" style="color: #e39b35;"></i><i class="fa-solid fa-star" style="color: #e39b35;"></i><i class="fa-solid fa-star" style="color: #e39b35;"></i><i class="fa-solid fa-star" style="color: #e39b35;"></i><i class="fa-regular fa-star" style="color: #e39b35;"></i></div>      
+                   <p>tasty meal and excellent service we had a lovely meal tonight.ecery dish. A wide range of dishes with excellent flavours. Staff attentive and friendly as well.</p>
+              
+            </div>
+          </div>
+        </div>
+        
+      </section>
+    <!-- Awards card section -->
+    <section class="py-20">
+        <div class="max-w-[85rem] mx-auto px-4">
+            <div class="grid grid-cols-1">
+                <div class="mb-10">
+                    <h1 class="text-2xl md:text-3xl lg:text-4xl text-center font-bold">Awards</h1>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <img src="/images/award1.png" class="h-full w-full" />
+                </div>
+                <div>
+                    <img src="/images/award2.png" class="h-full w-full" />
+                </div>
+                <div>
+                    <img src="/images/award3.png" class="h-full w-full" />
+                </div>
+                <div>
+                    <img src="/images/award4.png" class="h-full w-full" />
+                </div>
+            </div>
+            <div class="flex gap-0">
+                <div class="h-[100px] w-full bg-[url('/images/Layer.png')] bg-repeat mt-28"></div>
+            </div>
+            
+    </section>
+    <!-- Footer -->
+    <footer class="bg-black pt-12 text-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols lg:grid-cols-4 gap-4">
+                <div class="h-100">
+                    <img src="./assets/img/logo.png" alt="">
+                    <p class="text-white">Most exquisite fine dinning restaurant in city</p>
+                    <div class="pt-5 flex">
+                        <div class="flex">
+                            <button class="rounded-full bg-slate-800 text-white py-2 px-3 me-2"><i
+                                    class="fi fi-brands-twitter-alt"></i></button>
+                            <button class="rounded-full bg-slate-800 text-white py-2 px-3 me-2"><i
+                                    class="fi fi-brands-facebook"></i></button>
+                            <button class="rounded-full bg-slate-800 text-white py-2 px-3"><i
+                                    class="fi fi-brands-instagram"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p class="font-semibold mb-5 text-xl">Open Hours</p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <p class="">Monday</p>
+                        <p>09:00 - 24:00</p>
+                        <p class="">Tuesday</p>
+                        <p>09:00 - 24:00</p>
+                        <p class="">Wednesday</p>
+                        <p>09:00 - 24:00</p>
+                        <p class="">Thursday</p>
+                        <p>09:00 - 24:00</p>
+                        <p class="">Friday</p>
+                        <p>09:00 - 24:00</p>
+                        <p class="">Saturday</p>
+                        <p>09:00 - 24:00</p>
+                        <p class="">Sunday</p>
+                        <p>09:00 - 24:00</p>
+                    </div>
+                </div>
+                <div>
+                    <p class="font-semibold mb-12 text-xl"> </p>
+                    <div class="">
+                        <p class=""><span class="text-amber-400">Phone :</span> +91 258469584</p>
+                        <p class=""><span class="text-amber-400">E-mail :</span> example@gmail.com</p>
+                        <p class=""><span class="text-amber-400">Address :</span> 21, The Downs, Altrincham,
+                            WA14 2QD</p>
+                    </div>
+                </div>
+                <div>
+                    <p class="font-semibold mb-12 text-xl">Instagram</p>
+                    <div class="grid grid-cols-2">
+                        <img src="/images/1.jpg" alt="">
+                        <img src="/images/2.jpg" alt="">
+                        <img src="/images/3.jpg" alt="">
+                        <img src="/images/4.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="pt-10 pb-6 text-center">
+                Copyright ©2024 All rights reserved
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
