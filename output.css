@@ -831,6 +831,10 @@ video {
   left: 200px;
 }
 
+.top-5 {
+  top: 1.25rem;
+}
+
 .z-0 {
   z-index: 0;
 }
@@ -908,6 +912,10 @@ video {
 
 .mt-4 {
   margin-top: 1rem;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
 }
 
 .block {
@@ -1052,6 +1060,11 @@ video {
 
 .w-\[300px\] {
   width: 300px;
+}
+
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .max-w-4xl {
@@ -1288,6 +1301,10 @@ video {
 
 .bg-\[url\(\'https\:\/\/kalaiselvan37\.github\.io\/rasassi\/images\/rectangle_4\.png\'\)\] {
   background-image: url('https://kalaiselvan37.github.io/rasassi/images/rectangle_4.png');
+}
+
+.bg-\[url\(\'\.\/images\/Layer\.png\'\)\] {
+  background-image: url('./images/Layer.png');
 }
 
 .bg-repeat {
@@ -1582,6 +1599,11 @@ video {
     top: 1.25rem;
   }
 
+  .md\:mx-8 {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
   .md\:mt-0 {
     margin-top: 0px;
   }
@@ -1708,6 +1730,11 @@ video {
     margin-right: -1rem;
   }
 
+  .lg\:mx-8 {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -1724,6 +1751,10 @@ video {
     height: 750px;
   }
 
+  .lg\:h-auto {
+    height: auto;
+  }
+
   .lg\:w-60 {
     width: 15rem;
   }
@@ -1734,6 +1765,10 @@ video {
 
   .lg\:w-\[700px\] {
     width: 700px;
+  }
+
+  .lg\:w-auto {
+    width: auto;
   }
 
   .lg\:grid-cols-2 {
