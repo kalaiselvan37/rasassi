@@ -823,6 +823,14 @@ video {
   top: 90px;
 }
 
+.left-3 {
+  left: 0.75rem;
+}
+
+.left-\[200px\] {
+  left: 200px;
+}
+
 .z-0 {
   z-index: 0;
 }
@@ -844,6 +852,11 @@ video {
   margin-right: 0.75rem;
 }
 
+.mx-8 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -854,14 +867,19 @@ video {
   margin-bottom: 1rem;
 }
 
-.mx-4 {
-  margin-left: 1rem;
-  margin-right: 1rem;
+.-mx-5 {
+  margin-left: -1.25rem;
+  margin-right: -1.25rem;
 }
 
-.mx-8 {
-  margin-left: 2rem;
-  margin-right: 2rem;
+.-mx-7 {
+  margin-left: -1.75rem;
+  margin-right: -1.75rem;
+}
+
+.-mx-10 {
+  margin-left: -2.5rem;
+  margin-right: -2.5rem;
 }
 
 .mb-10 {
@@ -886,10 +904,6 @@ video {
 
 .me-2 {
   margin-inline-end: 0.5rem;
-}
-
-.mt-28 {
-  margin-top: 7rem;
 }
 
 .mt-4 {
@@ -980,10 +994,6 @@ video {
   height: 100vh;
 }
 
-.h-60 {
-  height: 15rem;
-}
-
 .max-h-full {
   max-height: 100%;
 }
@@ -1040,8 +1050,8 @@ video {
   width: 100%;
 }
 
-.w-60 {
-  width: 15rem;
+.w-\[300px\] {
+  width: 300px;
 }
 
 .max-w-4xl {
@@ -1126,6 +1136,10 @@ video {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
 }
 
 .rounded {
@@ -1228,20 +1242,52 @@ video {
   background-color: rgb(250 204 21 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\/images\/Layer\.png\'\)\] {
-  background-image: url('/images/Layer.png');
+.bg-gray-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'https\:\/\/kalaiselvan37\.github\.io\/rasassi\/images\/rectangle_4\.png\'\)\] {
-  background-image: url('https://kalaiselvan37.github.io/rasassi/images/rectangle_4.png');
+.bg-gray-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\.\/images\/Layer\.png\'\)\] {
-  background-image: url('./images/Layer.png');
+.bg-gray-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+}
+
+.bg-slate-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(51 65 85 / var(--tw-bg-opacity));
+}
+
+.bg-slate-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
+}
+
+.bg-slate-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(71 85 105 / var(--tw-bg-opacity));
+}
+
+.bg-gray-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(75 85 99 / var(--tw-bg-opacity));
+}
+
+.bg-gray-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'\.\.\/images\/Layer\.png\'\)\] {
   background-image: url('../images/Layer.png');
+}
+
+.bg-\[url\(\'https\:\/\/kalaiselvan37\.github\.io\/rasassi\/images\/rectangle_4\.png\'\)\] {
+  background-image: url('https://kalaiselvan37.github.io/rasassi/images/rectangle_4.png');
 }
 
 .bg-repeat {
@@ -1647,6 +1693,21 @@ video {
     top: 400px;
   }
 
+  .lg\:-mx-7 {
+    margin-left: -1.75rem;
+    margin-right: -1.75rem;
+  }
+
+  .lg\:-mx-10 {
+    margin-left: -2.5rem;
+    margin-right: -2.5rem;
+  }
+
+  .lg\:-mx-4 {
+    margin-left: -1rem;
+    margin-right: -1rem;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -1655,20 +1716,24 @@ video {
     display: none;
   }
 
+  .lg\:h-60 {
+    height: 15rem;
+  }
+
   .lg\:h-\[750px\] {
     height: 750px;
   }
 
-  .lg\:h-60 {
-    height: 15rem;
+  .lg\:w-60 {
+    width: 15rem;
   }
 
   .lg\:w-\[750px\] {
     width: 750px;
   }
 
-  .lg\:w-60 {
-    width: 15rem;
+  .lg\:w-\[700px\] {
+    width: 700px;
   }
 
   .lg\:grid-cols-2 {
@@ -1681,6 +1746,10 @@ video {
 
   .lg\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
   .lg\:px-14 {
