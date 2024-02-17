@@ -13,6 +13,13 @@ document.addEventListener("DOMContentLoaded", function () {
             behavior: 'smooth'
         });
     });
+    // Scroll to Home section
+    document.querySelector('a[href="#home"]').addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector('#home').scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
     // Scroll to Reserve now section
     document.querySelector('a[href="#reservenow"]').addEventListener('click', function (e) {
         e.preventDefault();
@@ -52,3 +59,14 @@ if (
 });
 }
 window.addEventListener('scroll', shakeOnScroll);
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Get the current URL
+    var currentUrl = window.location.pathname;
+
+    // Check if the current URL matches the home page URL
+    if (currentUrl === '#menu') {
+        // If it does, add a specific class to the "Home" link by its id
+        document.getElementById('menu').classList.add('text-red-800', 'md:text-xl');
+    }
+});
