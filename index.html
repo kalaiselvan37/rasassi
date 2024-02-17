@@ -8,100 +8,98 @@
     <link rel="stylesheet" href="./node_modules/@flaticon/flaticon-uicons/css/all/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>Rasassi</title>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const toggleButton = document.getElementById('toggleButton');
-            const navbar = document.getElementById('navbar-default');
-
-            toggleButton.addEventListener('click', function() {
-                navbar.classList.toggle('hidden');
-            });
-        });
-    </script>
 </head>
-
 <body>
-    <div class="flex flex-col min-h-screen">
-        <header class="bg-white max-w-[1250px] shadow-lg">   
-            <nav class="bg-white border-gray-200 border-r-0">
-                <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                    <img src="./images/logo.png" class="h-10 mx-3" alt="Flowbite Logo" />
-                    <button id="toggleButton" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 " aria-controls="navbar-default" aria-expanded="false">
-                        <span class="sr-only">Open main menu</span>
-                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-                        </svg>
-                    </button>
-                    <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-                        <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white ">
-                            <li>
-                                <a href="#" class="block py-2 px-3 text-white bg-red-800 rounded md:bg-transparent md:text-red-800 md:p-0    text-xl" aria-current="page">Home</a>
-                            </li>
-                            <li>
-                                <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-800 md:p-0  text-xl">Menu</a>
-                            </li>
-                            <li>
-                                <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-800 md:p-0  text-xl">Contact</a>
-                            </li>
-                            <li>
-                                <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-800 md:p-0  text-xl">Reserve Now</a>
-                            </li>
-                        </ul>
-                    </div>
+    <header class="bg-white max-w-full sticky top-0 z-20 shadow-lg">
+        <nav class="bg-white border-gray-200 border-r-0">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <img src="./images/logo.png" class="h-10 mx-3" alt="Flowbite Logo" />
+                <button id="toggleButton" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 "
+                    aria-controls="navbar-default" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+                <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                    <ul
+                        class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white ">
+                        <li>
+                            <a href="#" class="block py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-800 md:p-0 text-xl" aria-current="page">Home</a>
+                        </li>
+                        <li>
+                            <a href="#menu" class="block py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-800 md:p-0 text-xl">Menu</a>
+                        </li>
+                        <li>
+                            <a href="/#aboutus"class="block py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-800 md:p-0 text-xl">About Us</a>
+                        </li>
+                        <li>
+                            <a href="/#reservenow" class="block py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-800 md:p-0 text-xl">Reserve Now</a>
+                        </li>
+                        <li>
+                            <a href="/#contact" class="block py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-800 md:p-0 text-xl">Contact</a>
+                        </li>
+                    </ul>
                 </div>
-            </nav>
-        </header>
-        
-        <div class="absolute overflow-hidden top-0 right-0 bg-[url('https://kalaiselvan37.github.io/rasassi/images/rectangle_4.png')] w-full md:w-[850px] h-[1100px]
+            </div>
+        </nav>
+    </header>
+    <div class="absolute overflow-hidden top-0 right-0 bg-[url('https://kalaiselvan37.github.io/rasassi/images/rectangle_4.png')] w-full md:w-[850px] h-[1100px]
          bg-no-repeat hidden md:block">
-        </div>
-        <section class="relative md:top-5">
-            <div class="max-w-[50rem] mx-auto px-4 h-screen">
-                <div class="absolute lg:top-[180px] lg:left-[300px] left-[120px] top-[100px]">
-                    <p class="text-3xl md:text-center font-semibold bg-orange-300 p-2 leading-0">Experience</p>
-                </div>
-                 <div class="absolute lg:top-[270px] lg:left-[300px] top-[190px]"> <img src="./images/the_real_taste.png" alt=""></div>
-                <div class="absolute lg:top-[380px] lg:left-[300px] top-[270px] text-center">
-                    <p class="text-9xl font-extrabold text-lime-600">India</p>
-                    <img src="./images/tasty-tandoori-chicken-plate.png" class=" lg:hidden mt-4 " alt="">
-                </div>
-                <div class="absolute top-[650px] left-[1190px]"> <img
-                        src="./images/tasty-tandoori-chicken-plate.png" alt=""> </div>
-               <div class="absolute top-[50px] left-[1020px] hidden md:block "> <img
-                        src="./images/layer_22.png" alt=""> </div>
-                 <div class="absolute top-[90px] left-[650px] "> <img src="./images/layer_16.png" alt=""> </div>
-              <div class="absolute top-[60px] left-[380px] hidden md:block">
-                    <img src="./images/layer_25_copy.png" alt=""> </div>
-                  <div class="absolute top-[230px] left-[720px] ">
-                    <img src="./images/layer_28.png" alt=""> </div>
-               <div class="absolute top-[400px] left-[110px] hidden md:block"> <img src="./images/layer_25.png" alt="">
-                </div>
-                <div class="absolute top-[150px] left-[90px] hidden md:block"> <img src="./images/layer_29.png" alt="">
-                </div>
-                 <div class="absolute top-[650px] left-[60px] hidden md:block"> <img src="./images/layer_18.png" alt="">
-                </div>
-                <div
-                    class="absolute top-[600px] left-[460px] hidden md:block">
-                    <img src="./images/layer_20.png" alt=""> </div>
-                <div class="absolute top-[530px] left-[270px] hidden md:block"> <img src="./images/layer_27.png" alt="">
-                </div>
-                <div class="absolute top-[440px] left-[650px] hidden md:block">
-                    <img src="./images/layer_24.png" alt=""> </div>
-                <div class="absolute top-[455px] left-[650px] hidden md:block">
-                    <img src="./images/layer_24_copy.png" alt=""> </div>
-               <div class="absolute top-[580px] left-[750px] hidden md:block"> <img src="./images/layer_23.png" alt=""> </div>
-                <div class="absolute top-[400px] left-[900px] hidden md:block"> <img src="./images/layer_21.png" alt=""> </div>
-                <div class="absolute top-[770px] left-[350px] hidden md:block">
-                    <img src="./images/layer_19.png" alt=""> </div>
-                <div class="absolute top-[760px] left-[700px] hidden md:block"> <img src="./images/layer_26.png" alt=""> </div>
-                <div class="absolute top-[780px] left-[950px] hidden md:block"> <img src="./images/layer_17.png" alt=""> </div> 
-
-        </section>
     </div>
+    <section class="relative md:top-5">
+        <div class="max-w-[50rem] mx-auto lg:h-[980px] h-[640px]">
+            <div class="absolute lg:top-[180px] lg:left-[300px] left-[120px] top-[100px]">
+                <p class="text-3xl md:text-center font-semibold bg-orange-300 p-2 leading-0">Experience</p>
+            </div>
+            <div class="absolute lg:top-[270px] lg:left-[300px] top-[190px]"> <img src="./images/the_real_taste.png"
+                    alt="" class="lg:w-full w-[480px]"></div>
+            <div class="absolute lg:top-[380px] lg:left-[300px] top-[270px] text-center">
+                <p class="text-9xl font-extrabold text-lime-600">India</p>
+                <img src="./images/tasty-tandoori-chicken-plate.png" class=" lg:hidden mt-4 " alt="">
+            </div>
+            <div class="absolute top-[650px] left-[1190px]"> <img src="./images/tasty-tandoori-chicken-plate.png"
+                    alt=""> </div>
+            <div class="absolute top-[50px] left-[1020px] hidden md:block shake-on-scroll"> <img src="./images/layer_22.png" alt="">
+            </div>
+            <div class="absolute top-[90px] left-[650px] shake-on-scroll "> <img src="./images/layer_16.png" alt=""> </div>
+            <div class="absolute top-[60px] left-[380px] hidden md:block">
+                <img src="./images/layer_25_copy.png" alt=""> </div>
+            <div class="absolute top-[230px] left-[720px] ">
+                <img src="./images/layer_28.png" alt=""> </div>
+            <div class="absolute top-[400px] left-[110px] hidden md:block"> <img src="./images/layer_25.png" alt="">
+            </div>
+            <div class="absolute top-[150px] left-[90px] hidden md:block shake-on-scroll"> <img src="./images/layer_29.png" alt="">
+            </div>
+            <div class="absolute top-[650px] left-[60px] hidden md:block shake-on-scroll"> <img src="./images/layer_18.png" alt="">
+            </div>
+            <div class="absolute top-[600px] left-[460px] hidden md:block shake-on-scroll">
+                <img src="./images/layer_20.png" alt=""> </div>
+            <div class="absolute top-[530px] left-[270px] hidden md:block"> <img src="./images/layer_27.png" alt="">
+            </div>
+            <div class="absolute top-[440px] left-[650px] hidden md:block">
+                <img src="./images/layer_24.png" alt=""> </div>
+            <div class="absolute top-[455px] left-[650px] hidden md:block">
+                <img src="./images/layer_24_copy.png" alt=""> </div>
+            <div class="absolute top-[580px] left-[750px] hidden md:block shake-on-scroll"> <img src="./images/layer_23.png" alt="">
+            </div>
+            <div class="absolute top-[400px] left-[900px] hidden md:block shake-on-scroll"> <img src="./images/layer_21.png" alt="">
+            </div>
+            <div class="absolute top-[770px] left-[350px] hidden md:block shake-on-scroll">
+                <img src="./images/layer_19.png" alt=""> </div>
+            <div class="absolute top-[760px] left-[700px] hidden md:block"> <img src="./images/layer_26.png" alt="">
+            </div>
+            <div class="absolute top-[780px] left-[950px] hidden md:block shake-on-scroll"> <img src="./images/layer_17.png" alt="">
+            </div>
+            </div>
+    </section>
     </div>
     </div>
     <!-- Food and order now  -->
-    <section class="py-7">
+    <section class="lg:py-7 " id="menu">
         <div class="max-w-[85rem] mx-auto px-4">
             <div class="text-2xl font-semibold">Popular Dishes</div>
             <div class="text-5xl mb-4 font-extrabold relative">
@@ -133,7 +131,7 @@
                     </div>
                     <div class="absolute right-5 -bottom-2 md:bottom-0 text-xl">
                         <a href="https://rasassionline.com/">
-                           <img src="./images/order_now.png" alt="">
+                            <img src="./images/order_now.png" alt="">
                         </a>
                     </div>
                 </div>
@@ -155,56 +153,74 @@
         </div>
     </section>
     <!-- Welcome to resassi -->
-    <section class="lg:py-20 py-10">
+    <section class="lg:py-20 py-10 " id="aboutus">
         <div class="max-h-full px-4">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 space-y-5 bg-gray-700 ">
-                <div class="relative rounded-lg py-5 ">
+                <div class="relative rounded-lg py-5  z-0">
                     <div class="hidden lg:block absolute z-40 overflow-hidden left-[36rem] top-[40rem]">
-                        <img src="./images/table-dishes.png" class="scale-100 rounded-full border-2 border-yellow-400  w-[200px]  h-[200px]  object-cover ">
-                      </div>
-                      <div class="hidden lg:block absolute z-20   overflow-hidden left-[600px] top-[650px]">
-                        <div  class="scale-100 rounded-full border-2 border-dashed border-yellow-400  w-[195px]  h-[195px]  object-cover "></div>
-                      </div>
-                      <div class="hidden lg:block absolute z-20   overflow-hidden left-[540px] top-[50px]">
-                        <div  class="scale-100 rounded-full border-2 border-dashed border-yellow-400  w-[175px]  h-[175px]  object-cover "></div>
-                      </div>
-                      <div class="hidden lg:block absolute z-40   overflow-hidden left-[32rem] top-14">
-                        <img src="./images/table-dishes.png" class=" rounded-full object-cover border-2 border-yellow-400  w-[180px]  h-[180px] ">
-                      </div>
-                      <div class="hidden lg:block absolute z-0   overflow-hidden left-[490px] top-[70px]">
-                        <div  class="scale-100 rounded-full border-2  border-yellow-400  w-[48px]  h-[48px]  object-cover "></div>
-                      </div>
-                      <div class="hidden lg:block absolute z-0   overflow-hidden left-[550px] top-[760px]">
-                        <div  class="scale-100 rounded-full border-2  border-yellow-400  w-[80px]  h-[80px]  object-cover "></div>
-                      </div>
-                      <div class="relative p-0 z-10">
-                        <img src="./images/group-members.png" class="border-2 rounded-r-full w-[350px] h-[500px]  lg:w-[700px] lg:h-[930px]   border-yellow-400 border-l-0">
-                      </div>
+                        <img src="./images/table-dishes.png"
+                            class="scale-100 rounded-full border-2 border-yellow-400  w-[200px]  h-[200px]  object-cover ">
+                    </div>
+                    <div class="hidden lg:block absolute z-20   overflow-hidden left-[600px] top-[650px]">
+                        <div
+                            class="scale-100 rounded-full border-2 border-dashed border-yellow-400  w-[195px]  h-[195px]  object-cover ">
+                        </div>
+                    </div>
+                    <div class="hidden lg:block absolute z-20   overflow-hidden left-[540px] top-[50px]">
+                        <div
+                            class="scale-100 rounded-full border-2 border-dashed border-yellow-400  w-[175px]  h-[175px]  object-cover ">
+                        </div>
+                    </div>
+                    <div class="hidden lg:block absolute z-40   overflow-hidden left-[32rem] top-14">
+                        <img src="./images/table-dishes.png"
+                            class=" rounded-full object-cover border-2 border-yellow-400  w-[180px]  h-[180px] ">
+                    </div>
+                    <div class="hidden lg:block absolute z-0   overflow-hidden left-[490px] top-[70px]">
+                        <div
+                            class="scale-100 rounded-full border-2  border-yellow-400  w-[48px]  h-[48px]  object-cover ">
+                        </div>
+                    </div>
+                    <div class="hidden lg:block absolute z-0   overflow-hidden left-[550px] top-[760px]">
+                        <div
+                            class="scale-100 rounded-full border-2  border-yellow-400  w-[80px]  h-[80px]  object-cover ">
+                        </div>
+                    </div>
+                    <div class="relative p-0 z-10">
+                        <img src="./images/group-members.png"
+                            class="border-2 rounded-r-full w-[350px] h-[500px]  lg:w-[700px] lg:h-[930px]   border-yellow-400 border-l-0">
+                    </div>
                 </div>
                 <div class="py-5 px-0 md:py-2 overflow-x-hidden">
-                  <div class="px-5 lg:px-24 lg:-mx-7 lg:p-10">
-                  <h2 class="text-yellow-400 font-bold text-2xl pb-3 ">OUR RESTAURANT</h2>
-                  <img src="./images/welcome_to_rasassi.png" class="mb-2" alt="">
-                    <h2  class="text-yellow-400 font-bold text-2xl  pb-4 ">GOOD FOOD & GREAT VIBES</h2>
-                    <p class="text-white pb-2 text-2xl">The term <a class="text-yellow-400" href="">"Rasassi" </a> is derived from the 15th-century word <a class="text-yellow-400">"Rasassi" </a>, which means to satisfy one's hunger, and <a class="text-yellow-400">"Rasassi" </a> someone" means to satisfy someone with a delicious meal. </p>
-                      <p class="text-white ">
-                        <a class="text-yellow-400 text-2xl italic" href="">Our mission</a><span class="text-2xl"> is to provide a unique and relaxing dining experience at a premier home-style dining restaurant, similar to dining at home.</span></h3>
-                       <h3 class="text-white pb-2 text-2xl">Whatever the season, we have access to the very best suppliers who can provide us with the best quality meat, fish, and vegetables we use in our cooking. </h3>
-                       <h3 class="text-white pb-2 text-2xl">So if you want to visit the best restaurant in Altrincham and satisfy your hunger, take a look at our menu now.</h3>
+                    <div class="px-5 lg:px-24 lg:-mx-7 lg:p-10">
+                        <h2 class="text-yellow-400 font-bold text-2xl pb-3 ">OUR RESTAURANT</h2>
+                        <img src="./images/welcome_to_rasassi.png" class="mb-2" alt="">
+                        <h2 class="text-yellow-400 font-bold text-2xl  pb-4 ">GOOD FOOD & GREAT VIBES</h2>
+                        <p class="text-white pb-2 text-2xl">The term <a class="text-yellow-400" href="">"Rasassi" </a>
+                            is derived from the 15th-century word <a class="text-yellow-400">"Rasassi" </a>, which means
+                            to satisfy one's hunger, and <a class="text-yellow-400">"Rasassi" </a> someone" means to
+                            satisfy someone with a delicious meal. </p>
+                        <p class="text-white ">
+                            <a class="text-yellow-400 text-2xl italic" href="">Our mission</a><span class="text-2xl"> is
+                                to provide a unique and relaxing dining experience at a premier home-style dining
+                                restaurant, similar to dining at home.</span></h3>
+                            <h3 class="text-white pb-2 text-2xl">Whatever the season, we have access to the very best
+                                suppliers who can provide us with the best quality meat, fish, and vegetables we use in
+                                our cooking. </h3>
+                            <h3 class="text-white pb-2 text-2xl">So if you want to visit the best restaurant in
+                                Altrincham and satisfy your hunger, take a look at our menu now.</h3>
                             <div class="lg:px-20 lg:py-14 ">
-                       <img src="./images/we_speak_the_good_food_la.png" class="p-3 "  alt="">
-                       <img src="./images/the_only_thing_we_re_seri.png" class="p-3" alt="">
-    
-                       <img src="./images/the_good_side_of_the_food.png" class="p-3" alt="">   
+                                <img src="./images/we_speak_the_good_food_la.png" class="p-3 " alt="">
+                                <img src="./images/the_only_thing_we_re_seri.png" class="p-3" alt="">
+
+                                <img src="./images/the_good_side_of_the_food.png" class="p-3" alt="">
+                            </div>
                     </div>
-                          
-                      </div>
-              </div>
-        </div>
+                </div>
+            </div>
         </div>
     </section>
     <!-- Dinner and Input Table -->
-    <section class="lg:py-10 py-10">
+    <section class="lg:py-10 py-10" id="reservenow">
         <div class="max-w-[85rem] mx-auto px-8">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 space-y-6 md:space-y-0">
                 <div> <img src="./images/table.png" alt=""> </div>
@@ -215,12 +231,11 @@
             </div>
         </div>
     </section>
-
     <!-- Restaurant card -->
     <section class="lg:py-20 py-10">
         <div class="max-w-[85rem] mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 space-y-6 xl:space-y-0">
-                <div class="relative rounded-lg flex justify-center">
+                <div class="relative rounded-lg flex justify-center z-0">
                     <div class="absolute z-20  w-[350px] h-[900px] overflow-hidden">
                         <img src="./images/cardpic1.png"
                             class="scale-100 rounded-b-full h-[350px] hover:scale-110 hover:rounded-b-full  object-cover ">
@@ -233,8 +248,10 @@
                     </div>
                     <div class="absolute z-10 lg:top-[400px] top-[360px]  md:bottom-0 text-xl">
                         <div class="">
-                            <div class="flex justify-center text-yellow-400 font-extrabold lg:text-4xl text-2xl pb-5 ">Parties</div>
-                            <div class="flex justify-center w-80 text-white lg:text-xl text-xl"> You can reserve the space for parties
+                            <div class="flex justify-center text-yellow-400 font-extrabold lg:text-4xl text-2xl pb-5 ">
+                                Parties</div>
+                            <div class="flex justify-center w-80 text-white lg:text-xl text-xl"> You can reserve the
+                                space for parties
                                 and have the best memories with
                                 your loved ...</div>
                         </div>
@@ -247,7 +264,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="relative rounded-lg flex justify-center">
+                <div class="relative rounded-lg flex justify-center z-0">
                     <div class="absolute z-20  w-[350px] h-[900px] overflow-hidden">
                         <img src="./images/restaurant.png"
                             class="scale-100 rounded-b-full h-[350px] hover:scale-110 hover:rounded-b-full  object-cover ">
@@ -260,9 +277,11 @@
                     </div>
                     <div class="absolute z-10 lg:top-[400px] top-[360px]  md:bottom-0 text-xl">
                         <div class="">
-                            <div class="flex justify-center text-yellow-400 font-extrabold lg:text-4xl text-2xl pb-5">Outdoor
+                            <div class="flex justify-center text-yellow-400 font-extrabold lg:text-4xl text-2xl pb-5">
+                                Outdoor
                                 Catering</div>
-                            <div class="flex justify-center  w-80 text-white lg:text-xl text-xl"> With keen obligation towards
+                            <div class="flex justify-center  w-80 text-white lg:text-xl text-xl"> With keen obligation
+                                towards
                                 excellence, we have been engrossed
                                 in the realm of delivering to ...</div>
                         </div>
@@ -275,7 +294,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="relative rounded-lg flex justify-center">
+                <div class="relative rounded-lg flex justify-center z-0">
                     <div class="absolute z-20  w-[350px] h-[900px] overflow-hidden">
                         <img src="./images/restaurant1.png"
                             class="scale-100 rounded-b-full h-[350px] w-full hover:scale-110 hover:rounded-b-full  object-cover ">
@@ -288,7 +307,8 @@
                     </div>
                     <div class="absolute z-10 lg:top-[400px] top-[360px]  md:bottom-0 text-xl">
                         <div class="">
-                            <div class="flex justify-center text-yellow-400 font-extrabold lg:text-4xl text-2xl pb-5">Fine Dining
+                            <div class="flex justify-center text-yellow-400 font-extrabold lg:text-4xl text-2xl pb-5">
+                                Fine Dining
                             </div>
                             <div class="flex justify-center w-80 text-white lg:text-xl text-xl"> An ambiance of relaxed
                                 sophistication and a comfortable
@@ -309,67 +329,108 @@
     </section>
     <section class="lg:py-20 top-[500px] bg-black">
         <div class="max-w-[85rem] mx-auto   ">
-          <div class="text-center ">
-            <h1 class="text-white p-2">Excellent</h1>
-            <div class="flex justify-center pb-2"> <i class="fa-solid fa-circle " style="color: #3fc881;"></i><i class="fa-solid fa-circle" style="color: #3fc881;"></i><i class="fa-solid fa-circle" style="color: #3fc881;"></i><i class="fa-solid fa-circle" style="color: #3fc881;"></i><i class="fa-regular fa-circle" style="color: #3fc881;"></i></div>
-            <h1 class="text-white ">Based on 381 Reviews</h1>
-            <h1 class="text-white "><i class="fa-brands fa-discord" style="color: #114f2f;"></i>Tripadviser</h1>
-    
-          </div>
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 space-y-6 xl:space-y-0 p-5  ">
-            <div class="mx-w-sm py-3 px-3 bg-white rounded-lg ">
-              <h1 class="text-2xl"><i class="fa-solid fa-circle-user fa-2xl" style="color: #f4810e;"></i>User1</h1>
-              <h6 class="pl-6 pt-1">11-02-2024</h6>
-              <div class="pl-6"> <i class="fa-solid fa-circle " style="color: #114f2f;"></i><i class="fa-solid fa-circle" style="color: #114f2f;"></i><i class="fa-solid fa-circle" style="color: #114f2f;"></i><i class="fa-solid fa-circle" style="color: #114f2f;"></i><i class="fa-regular fa-circle" style="color: #114f2f;"></i></div>
-               <p>tasty meal and excellent service we had a lovely meal tonight.ecery dish. A wide range of dishes with excellent flavours. Staff attentive and friendly as well.</p>
-              
+            <div class="text-center ">
+                <h1 class="text-white p-2">Excellent</h1>
+                <div class="flex justify-center pb-2"> <i class="fa-solid fa-circle " style="color: #3fc881;"></i><i
+                        class="fa-solid fa-circle" style="color: #3fc881;"></i><i class="fa-solid fa-circle"
+                        style="color: #3fc881;"></i><i class="fa-solid fa-circle" style="color: #3fc881;"></i><i
+                        class="fa-regular fa-circle" style="color: #3fc881;"></i></div>
+                <h1 class="text-white ">Based on 381 Reviews</h1>
+                <h1 class="text-white "><i class="fa-brands fa-discord" style="color: #114f2f;"></i>Tripadviser</h1>
+
             </div>
-            <div class="mx-w-sm py-3 px-3 bg-white rounded-lg ">
-              <h1 class="text-2xl"><i class="fa-solid fa-circle-user fa-2xl" style="color: #b1a30e;"></i>User2</h1>
-              <h6 class="pl-6 pt-1">11-02-2024</h6>
-              <div class="pl-6"> <i class="fa-solid fa-circle " style="color: #114f2f;"></i><i class="fa-solid fa-circle" style="color: #114f2f;"></i><i class="fa-solid fa-circle" style="color: #114f2f;"></i><i class="fa-solid fa-circle" style="color: #114f2f;"></i><i class="fa-regular fa-circle" style="color: #114f2f;"></i></div>
-               <p>tasty meal and excellent service we had a lovely meal tonight.ecery dish. A wide range of dishes with excellent flavours. Staff attentive and friendly as well.</p>
-              
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 space-y-6 xl:space-y-0 p-5  ">
+                <div class="mx-w-sm py-3 px-3 bg-white rounded-lg ">
+                    <h1 class="text-2xl"><i class="fa-solid fa-circle-user fa-2xl" style="color: #f4810e;"></i>User1
+                    </h1>
+                    <h6 class="pl-6 pt-1">11-02-2024</h6>
+                    <div class="pl-6"> <i class="fa-solid fa-circle " style="color: #114f2f;"></i><i
+                            class="fa-solid fa-circle" style="color: #114f2f;"></i><i class="fa-solid fa-circle"
+                            style="color: #114f2f;"></i><i class="fa-solid fa-circle" style="color: #114f2f;"></i><i
+                            class="fa-regular fa-circle" style="color: #114f2f;"></i></div>
+                    <p>tasty meal and excellent service we had a lovely meal tonight.ecery dish. A wide range of dishes
+                        with excellent flavours. Staff attentive and friendly as well.</p>
+
+                </div>
+                <div class="mx-w-sm py-3 px-3 bg-white rounded-lg ">
+                    <h1 class="text-2xl"><i class="fa-solid fa-circle-user fa-2xl" style="color: #b1a30e;"></i>User2
+                    </h1>
+                    <h6 class="pl-6 pt-1">11-02-2024</h6>
+                    <div class="pl-6"> <i class="fa-solid fa-circle " style="color: #114f2f;"></i><i
+                            class="fa-solid fa-circle" style="color: #114f2f;"></i><i class="fa-solid fa-circle"
+                            style="color: #114f2f;"></i><i class="fa-solid fa-circle" style="color: #114f2f;"></i><i
+                            class="fa-regular fa-circle" style="color: #114f2f;"></i></div>
+                    <p>tasty meal and excellent service we had a lovely meal tonight.ecery dish. A wide range of dishes
+                        with excellent flavours. Staff attentive and friendly as well.</p>
+
+                </div>
+                <div class="mx-w-sm py-3 px-3 bg-white rounded-lg ">
+                    <h1 class="text-2xl"><i class="fa-solid fa-circle-user fa-2xl" style="color: #45df2d;"></i>User3
+                    </h1>
+                    <h6 class="pl-6 pt-1">11-02-2024</h6>
+                    <div class="pl-6"> <i class="fa-solid fa-circle " style="color: #114f2f;"></i><i
+                            class="fa-solid fa-circle" style="color: #114f2f;"></i><i class="fa-solid fa-circle"
+                            style="color: #114f2f;"></i><i class="fa-solid fa-circle" style="color: #114f2f;"></i><i
+                            class="fa-regular fa-circle" style="color: #114f2f;"></i></div>
+                    <p>tasty meal and excellent service we had a lovely meal tonight.ecery dish. A wide range of dishes
+                        with excellent flavours. Staff attentive and friendly as well.</p>
+
+                </div>
             </div>
-            <div class="mx-w-sm py-3 px-3 bg-white rounded-lg ">
-              <h1 class="text-2xl"><i class="fa-solid fa-circle-user fa-2xl" style="color: #45df2d;"></i>User3</h1>
-              <h6 class="pl-6 pt-1">11-02-2024</h6>
-              <div class="pl-6"> <i class="fa-solid fa-circle " style="color: #114f2f;"></i><i class="fa-solid fa-circle" style="color: #114f2f;"></i><i class="fa-solid fa-circle" style="color: #114f2f;"></i><i class="fa-solid fa-circle" style="color: #114f2f;"></i><i class="fa-regular fa-circle" style="color: #114f2f;"></i></div>
-               <p>tasty meal and excellent service we had a lovely meal tonight.ecery dish. A wide range of dishes with excellent flavours. Staff attentive and friendly as well.</p>
-              
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 space-y-6 xl:space-y-0 p-5 ">
+                <div class="text-center py-10">
+                    <h1 class="text-white p-2">Excellent</h1>
+                    <div class="flex justify-center pb-2"> <i class="fa-solid fa-star" style="color: #e39b35;"></i><i
+                            class="fa-solid fa-star" style="color: #e39b35;"></i><i class="fa-solid fa-star"
+                            style="color: #e39b35;"></i><i class="fa-solid fa-star" style="color: #e39b35;"></i><i
+                            class="fa-regular fa-star" style="color: #e39b35;"></i></div>
+                    <h1 class="text-white ">Based on 284 Reviews</h1>
+                    <p class="text-white ">powered by <a class="text-blue-500" href="">g</a><a class="text-red-500"
+                            href="">o</a><a class="text-yellow-600" href="">o</a><a class="text-blue-500"
+                            href="">g</a><a class="text-green-500" href="">l</a><a class="text-red-500" href="">e</a>
+                    </p>
+
+                </div>
+                <div class="mx-w-sm py-3 px-3 bg-white rounded-lg ">
+                    <h1 class="text-2xl"><i class="fa-solid fa-circle-user fa-2xl" style="color: #e01010;"></i>User1
+                    </h1>
+                    <h6 class="pl-6 pt-1">11-02-2024</h6>
+                    <div class="pl-6"> <i class="fa-solid fa-star" style="color: #e39b35;"></i><i
+                            class="fa-solid fa-star" style="color: #e39b35;"></i><i class="fa-solid fa-star"
+                            style="color: #e39b35;"></i><i class="fa-solid fa-star" style="color: #e39b35;"></i><i
+                            class="fa-regular fa-star" style="color: #e39b35;"></i></div>
+                    <p>tasty meal and excellent service we had a lovely meal tonight.ecery dish. A wide range of dishes
+                        with excellent flavours. Staff attentive and friendly as well.</p>
+
+                </div>
+                <div class="mx-w-sm py-3 px-3 bg-white rounded-lg ">
+                    <h1 class="text-2xl"><i class="fa-solid fa-circle-user fa-2xl" style="color: #ff2bd5;"></i>User2
+                    </h1>
+                    <h6 class="pl-6 pt-1">11-02-2024</h6>
+                    <div class="pl-6"> <i class="fa-solid fa-star" style="color: #e39b35;"></i><i
+                            class="fa-solid fa-star" style="color: #e39b35;"></i><i class="fa-solid fa-star"
+                            style="color: #e39b35;"></i><i class="fa-solid fa-star" style="color: #e39b35;"></i><i
+                            class="fa-regular fa-star" style="color: #e39b35;"></i></div>
+                    <p>tasty meal and excellent service we had a lovely meal tonight.ecery dish. A wide range of dishes
+                        with excellent flavours. Staff attentive and friendly as well.</p>
+
+                </div>
+                <div class="mx-w-sm py-3 px-3 bg-white rounded-lg ">
+                    <h1 class="text-2xl"><i class="fa-solid fa-circle-user fa-2xl" style="color: #3c1eeb;"></i>User3
+                    </h1>
+                    <h6 class="pl-6 pt-1">11-02-2024</h6>
+                    <div class="pl-6"> <i class="fa-solid fa-star" style="color: #e39b35;"></i><i
+                            class="fa-solid fa-star" style="color: #e39b35;"></i><i class="fa-solid fa-star"
+                            style="color: #e39b35;"></i><i class="fa-solid fa-star" style="color: #e39b35;"></i><i
+                            class="fa-regular fa-star" style="color: #e39b35;"></i></div>
+                    <p>tasty meal and excellent service we had a lovely meal tonight.ecery dish. A wide range of dishes
+                        with excellent flavours. Staff attentive and friendly as well.</p>
+
+                </div>
             </div>
-          </div>
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 space-y-6 xl:space-y-0 p-5 ">
-            <div class="text-center py-10">
-              <h1 class="text-white p-2">Excellent</h1>
-              <div class="flex justify-center pb-2"> <i class="fa-solid fa-star" style="color: #e39b35;"></i><i class="fa-solid fa-star" style="color: #e39b35;"></i><i class="fa-solid fa-star" style="color: #e39b35;"></i><i class="fa-solid fa-star" style="color: #e39b35;"></i><i class="fa-regular fa-star" style="color: #e39b35;"></i></div>
-              <h1 class="text-white ">Based on 284 Reviews</h1>
-              <p class="text-white ">powered by <a class="text-blue-500" href="">g</a><a class="text-red-500" href="">o</a><a class="text-yellow-600" href="">o</a><a class="text-blue-500" href="">g</a><a class="text-green-500" href="">l</a><a class="text-red-500" href="">e</a></p>
-      
-            </div>
-            <div class="mx-w-sm py-3 px-3 bg-white rounded-lg ">
-              <h1 class="text-2xl"><i class="fa-solid fa-circle-user fa-2xl" style="color: #e01010;"></i>User1</h1>
-              <h6 class="pl-6 pt-1">11-02-2024</h6>
-              <div class="pl-6"> <i class="fa-solid fa-star" style="color: #e39b35;"></i><i class="fa-solid fa-star" style="color: #e39b35;"></i><i class="fa-solid fa-star" style="color: #e39b35;"></i><i class="fa-solid fa-star" style="color: #e39b35;"></i><i class="fa-regular fa-star" style="color: #e39b35;"></i></div>           <p>tasty meal and excellent service we had a lovely meal tonight.ecery dish. A wide range of dishes with excellent flavours. Staff attentive and friendly as well.</p>
-              
-            </div>
-            <div class="mx-w-sm py-3 px-3 bg-white rounded-lg ">
-              <h1 class="text-2xl"><i class="fa-solid fa-circle-user fa-2xl" style="color: #ff2bd5;"></i>User2</h1>
-              <h6 class="pl-6 pt-1">11-02-2024</h6>
-              <div class="pl-6"> <i class="fa-solid fa-star" style="color: #e39b35;"></i><i class="fa-solid fa-star" style="color: #e39b35;"></i><i class="fa-solid fa-star" style="color: #e39b35;"></i><i class="fa-solid fa-star" style="color: #e39b35;"></i><i class="fa-regular fa-star" style="color: #e39b35;"></i></div>           <p>tasty meal and excellent service we had a lovely meal tonight.ecery dish. A wide range of dishes with excellent flavours. Staff attentive and friendly as well.</p>
-              
-            </div>
-            <div class="mx-w-sm py-3 px-3 bg-white rounded-lg ">
-              <h1 class="text-2xl"><i class="fa-solid fa-circle-user fa-2xl" style="color: #3c1eeb;"></i>User3</h1>
-              <h6 class="pl-6 pt-1">11-02-2024</h6>
-              <div class="pl-6"> <i class="fa-solid fa-star" style="color: #e39b35;"></i><i class="fa-solid fa-star" style="color: #e39b35;"></i><i class="fa-solid fa-star" style="color: #e39b35;"></i><i class="fa-solid fa-star" style="color: #e39b35;"></i><i class="fa-regular fa-star" style="color: #e39b35;"></i></div>      
-                   <p>tasty meal and excellent service we had a lovely meal tonight.ecery dish. A wide range of dishes with excellent flavours. Staff attentive and friendly as well.</p>
-              
-            </div>
-          </div>
         </div>
-        
-      </section>
+
+    </section>
     <!-- Awards card section -->
     <section class="lg:py-20 py-10">
         <div class="max-w-[85rem] mx-auto px-4">
@@ -392,11 +453,11 @@
                     <img src="./images/award4.png" class="lg:h-auto lg:w-60  mx-8" />
                 </div>
             </div>
-               
+
     </section>
     <!-- Footer -->
     <div class="h-[100px] w-full bg-[url('./images/Layer.png')]"></div>
-    <footer class="bg-black text-white">
+    <footer class="bg-black text-white" id="contact">
         <div class="container mx-auto px-4">
             <div class="grid grid-cols lg:grid-cols-4 gap-4">
                 <div class="h-100">
@@ -404,17 +465,14 @@
                     <p class="text-white">Most exquisite fine dinning restaurant in city</p>
                     <div class="pt-5 flex">
                         <div class="flex">
-                            <button class="rounded-full bg-slate-800 text-white py-2 px-3 me-2"><i
-                                    class="fi fi-brands-twitter-alt"></i></button>
-                            <button class="rounded-full bg-slate-800 text-white py-2 px-3 me-2"><i
-                                    class="fi fi-brands-facebook"></i></button>
-                            <button class="rounded-full bg-slate-800 text-white py-2 px-3"><i
-                                    class="fi fi-brands-instagram"></i></button>
+                            <button class="rounded-full bg-slate-800 text-white py-2 px-3 me-2"><i class="fi fi-brands-twitter-alt"></i></button>
+                            <button class="rounded-full bg-slate-800 text-white py-2 px-3 me-2"><i class="fi fi-brands-facebook"></i></button>
+                            <button class="rounded-full bg-slate-800 text-white py-2 px-3"><i class="fi fi-brands-instagram"></i></button>
                         </div>
                     </div>
                 </div>
                 <div>
-                    <p class="font-semibold mb-5 text-xl pt-3">Open Hours</p>
+                    <p class="font-semibold mb-5 text-xl py-4">Open Hours</p>
                     <div class="grid grid-cols-2 gap-4">
                         <p class="">Monday</p>
                         <p>09:00 - 24:00</p>
@@ -442,7 +500,7 @@
                     </div>
                 </div>
                 <div>
-                    <p class="font-semibold mb-12 text-xl">Instagram</p>
+                    <p class="font-semibold mb-12 text-xl py-4">Instagram</p>
                     <div class="grid grid-cols-2">
                         <img src="./images/1.jpg" alt="">
                         <img src="./images/2.jpg" alt="">
@@ -456,7 +514,7 @@
             </div>
         </div>
     </footer>
-
 </body>
+<script src="/scroll.js"></script>
 
 </html>
