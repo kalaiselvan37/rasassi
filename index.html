@@ -57,38 +57,14 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
-function shakeOnScroll() {
-const imagesToShake = document.querySelectorAll('.shake-on-scroll');
-imagesToShake.forEach(image => {
-const bounding = image.getBoundingClientRect();
-if (
-    bounding.top >= 0 &&
-    bounding.left >= 0 &&
-    bounding.right <= (window.innerWidth || document.documentElement.clientWidth) &&
-    bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight)
-) {
-    image.classList.add('shake');
-} else {
-    image.classList.remove('shake');
-}
-});
-}
-window.addEventListener('scroll', shakeOnScroll);
-document.addEventListener("DOMContentLoaded", function() {
-    var currentUrl = window.location.pathname;
 
-    if (currentUrl === '#menu') {
-        document.getElementById('menu').classList.add('text-red-800', 'md:text-xl');
-    }
-});
-
-const buttons = document.querySelectorAll('a');
-buttons.forEach(button => {
-    button.addEventListener('click', function() {
-        buttons.forEach(btn => btn.classList.remove('active'));
-        this.classList.add('active');
-    });
-});
+function handleClick(element) {
+            const links = document.querySelectorAll('a');
+            links.forEach(link => {
+                link.classList.remove('active');
+            });
+            element.classList.add('active');
+        }
     </script>
 </head>
 <body>
@@ -107,22 +83,22 @@ buttons.forEach(button => {
                     </svg>
                 </button>
                 <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-                    <ul
+                    <ul 
                         class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white ">
                         <li>
-                            <a href="#home" id="homeButton"  class="block py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-800 md:p-0 text-xl active" aria-current="page">Home</a>
+                            <a href="#home" onclick="handleClick(this)"  class="block py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-800 md:p-0 text-xl active" aria-current="page">Home</a>
                         </li>
                         <li>
-                            <a href="#menu" id="menuButton"   class="block py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-800 md:p-0 text-xl">Menu</a>
+                            <a href="#menu" onclick="handleClick(this)"   class="block py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-800 md:p-0 text-xl">Menu</a>
                         </li>
                         <li>
-                            <a href="#aboutus" id="aboutButton"  class="block py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-800 md:p-0 text-xl">About Us</a>
+                            <a href="#aboutus"  onclick="handleClick(this)" class="block py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-800 md:p-0 text-xl">About Us</a>
                         </li>
                         <li>
-                            <a href="#reservenow" id="reserveButton"  class="block py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-800 md:p-0 text-xl">Reserve Now</a>
+                            <a href="#reservenow" onclick="handleClick(this)"  class="block py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-800 md:p-0 text-xl">Reserve Now</a>
                         </li>
                         <li>
-                            <a href="#contact" id="contactButton" class="block py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-800 md:p-0 text-xl">Contact</a>
+                            <a href="#contact" onclick="handleClick(this)" class="block py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-800 md:p-0 text-xl">Contact</a>
                         </li>
                         <li class="hidden md:block bg-orange-300 p-5 rounded-xl text-lg py-1">
                             Call: +91 258469584
