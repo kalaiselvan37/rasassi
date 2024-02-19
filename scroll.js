@@ -42,30 +42,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
-function shakeOnScroll() {
-const imagesToShake = document.querySelectorAll('.shake-on-scroll');
-imagesToShake.forEach(image => {
-const bounding = image.getBoundingClientRect();
-if (
-    bounding.top >= 0 &&
-    bounding.left >= 0 &&
-    bounding.right <= (window.innerWidth || document.documentElement.clientWidth) &&
-    bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight)
-) {
-    image.classList.add('shake');
-} else {
-    image.classList.remove('shake');
-}
-});
-}
-window.addEventListener('scroll', shakeOnScroll);
-document.addEventListener("DOMContentLoaded", function() {
-    var currentUrl = window.location.pathname;
-
-    if (currentUrl === '#menu') {
-        document.getElementById('menu').classList.add('text-red-800', 'md:text-xl');
-    }
-});
 
 const buttons = document.querySelectorAll('a');
 buttons.forEach(button => {
