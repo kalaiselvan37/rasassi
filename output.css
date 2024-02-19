@@ -883,6 +883,18 @@ video {
   top: 390px;
 }
 
+.left-\[50px\] {
+  left: 50px;
+}
+
+.left-\[30px\] {
+  left: 30px;
+}
+
+.-left-\[10px\] {
+  left: -10px;
+}
+
 .z-0 {
   z-index: 0;
 }
