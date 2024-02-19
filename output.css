@@ -807,6 +807,26 @@ video {
   top: 780px;
 }
 
+.top-\[180px\] {
+  top: 180px;
+}
+
+.top-\[80px\] {
+  top: 80px;
+}
+
+.top-\[170px\] {
+  top: 170px;
+}
+
+.left-\[320px\] {
+  left: 320px;
+}
+
+.left-\[300px\] {
+  left: 300px;
+}
+
 .z-0 {
   z-index: 0;
 }
