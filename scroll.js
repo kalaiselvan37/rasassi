@@ -70,3 +70,39 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById('menu').classList.add('text-red-800', 'md:text-xl');
     }
 });
+
+// window.addEventListener('scroll', function () {
+//     const sections = document.querySelectorAll('section');
+//     const navLinks = document.querySelectorAll('#navbar-default a');
+//     let currentSection = '';
+//     sections.forEach(section => {
+//         const sectionTop = section.offsetTop;
+//         const sectionHeight = section.clientHeight;
+//         if (pageYOffset >= sectionTop - sectionHeight / 3) {
+//             currentSection = section.getAttribute('id');
+//         }
+//     });
+
+//     navLinks.forEach(link => {
+//         link.classList.remove('text-red-800');
+//         if (link.getAttribute('href').substring(1) === currentSection) {
+//             link.classList.add('text-red-800');
+            
+//         }
+//     });
+// });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const menuLinks = document.querySelectorAll("#navbar-default a");
+
+    menuLinks[0].classList.add("active");
+    
+    menuLinks.forEach(function (link) {
+        link.addEventListener("click", function (event) {
+            menuLinks.forEach(function (link) {
+                link.classList.remove("active");
+            });
+            this.classList.add("active");
+        });
+    });
+});
