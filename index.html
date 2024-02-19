@@ -57,7 +57,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
-
 function handleClick(element) {
             const links = document.querySelectorAll('a');
             links.forEach(link => {
@@ -101,7 +100,7 @@ function handleClick(element) {
                             <a href="#contact" onclick="handleClick(this)" class="block py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-800 md:p-0 text-xl">Contact</a>
                         </li>
                         <li class="hidden md:block bg-orange-300 p-5 rounded-xl text-lg py-1">
-                            Call: +91 258469584
+                            Call: +1 258469584
                         </li>
                     </ul>
                 </div>
@@ -177,8 +176,8 @@ function handleClick(element) {
                         <img src="./images/Rectangle 8 copy.png">
                     </div>
                     <div class="absolute right-5 -bottom-2 md:bottom-0 text-xl">
-                        <a href="https://rasassionline.com/">
-                            <img src="./images/order_now.png" alt="">
+                        <a href="https://rasassionline.com/" target="_blank">
+                            <img src="./images/order_now.png" alt="Order Now">
                         </a>
                     </div>
                 </div>
@@ -191,8 +190,8 @@ function handleClick(element) {
                         <img src="./images/Rectangle 8 copy.png">
                     </div>
                     <div class="absolute right-5 -bottom-2 md:bottom-0 text-xl">
-                        <a href="https://rasassionline.com/">
-                            <img src="./images/order_now.png" alt="">
+                        <a href="https://rasassionline.com/" target="_blank">
+                            <img src="./images/order_now.png" alt="Order Now">
                         </a>
                     </div>
                 </div>
@@ -206,9 +205,9 @@ function handleClick(element) {
                     </div>
                     <div class="absolute right-5 -bottom-2 md:bottom-0 text-xl">
                         <a href="https://rasassionline.com/" target="_blank">
-                            <img src="./images/order_now.png" alt="">
+                            <img src="./images/order_now.png" alt="Order Now">
                         </a>
-                    </div>                    
+                    </div>                                    
                 </div>
             </div>
         </div>
@@ -248,8 +247,12 @@ function handleClick(element) {
                     </div>
                     <div class="relative p-0 z-10">
                         <img src="./images/group-members.png"
-                            class="border-2 rounded-r-full w-[350px] h-[500px]  lg:w-[700px] lg:h-[930px]   border-yellow-400 border-l-0">
+                            class="hidden md:block border-2 rounded-r-full w-[350px] h-[500px] lg:w-[700px] lg:h-[930px] border-yellow-400 border-l-0">
+                    
+                        <img src="./images/group-members.png"
+                            class="block md:hidden border-2 rounded-b-full w-full h-auto border-yellow-400">
                     </div>
+                    
                 </div>
                 <div class="py-5 px-0 md:py-2 overflow-x-hidden">
                     <div class="px-5 lg:px-24 lg:-mx-7 lg:p-10">
@@ -298,20 +301,18 @@ function handleClick(element) {
     </div>
     </section> -->
     <!-- Restaurant card -->
-    <section class="lg:py-20 py-10 pb-14  relative">
+    <section class="lg:py-20  pb-14  relative">
         <div class="text-5xl mb-4 font-extrabold text-center block">
             <span class=" inset-x-0 bottom-0 h-4 w-32 bg-yellow-400"></span>
             <span class=" z-10 text-black">Our Other Services</span>
         </div>
-
-<div class="absolute lg:-top-12 lg:left-[247px] lg:w-[1400px] left-[20px] w-[90%] lg:h-48 bg-yellow-400 rounded-xl text-center pt-3 text-xl lg:text-5xl font-bold mt-28 hidden lg:block">
-    Our Other Services
-</div>
-
+        <div class="absolute lg:-top-12 lg:left-[247px] lg:w-[1400px] left-[20px] w-[90%] lg:h-48 bg-yellow-400 rounded-xl text-center pt-3 text-xl lg:text-5xl font-bold mt-28 hidden lg:block">
+            Our Other Services
+        </div>
         <div class="max-w-[85rem] mx-auto px-6 relative">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 space-y-6 xl:space-y-0">
                 <div class="relative rounded-lg flex justify-center  z-0">
-                    <div class="absolute z-20  w-[350px] h-[900px] overflow-hidden">
+                    <div class="absolute z-20  lg:w-[350px] lg:h-[900px] w-[300px] overflow-hidden">
                         <img src="./images/cardpic1.png"
                             class=" rounded-b-full h-[350px] hover:rounded-b-full  object-cover ">
                     </div>
@@ -325,7 +326,7 @@ function handleClick(element) {
                         <div class="">
                             <div class="flex justify-center text-yellow-400 font-extrabold lg:text-4xl text-2xl pb-5 ">
                                 Parties</div>
-                            <div class="flex justify-center w-80 text-white lg:text-xl text-xl"> You can reserve the
+                            <div class="flex justify-center w-80 text-white lg:text-xl text-base lg:p-0 p-3 lg:-my-0 -my-6"> You can reserve the
                                 space for parties
                                 and have the best memories with
                                 your loved ...</div>
@@ -340,7 +341,7 @@ function handleClick(element) {
                     </div>
                 </div>
                 <div class="relative rounded-lg flex justify-center z-0">
-                    <div class="absolute z-20  w-[350px] h-[900px] overflow-hidden">
+                    <div class="absolute z-20  lg:w-[350px] lg:h-[900px] w-[300px] overflow-hidden">
                         <img src="./images/restaurant.png"
                             class=" rounded-b-full h-[350px]  hover:rounded-b-full  object-cover ">
                     </div>
@@ -355,7 +356,7 @@ function handleClick(element) {
                             <div class="flex justify-center text-yellow-400 font-extrabold lg:text-4xl text-2xl pb-5">
                                 Outdoor
                                 Catering</div>
-                            <div class="flex justify-center  w-80 text-white lg:text-xl text-xl"> With keen obligation
+                            <div class="flex justify-center  w-80 text-white lg:text-xl text-base lg:p-0 p-3 lg:-my-0 -my-6"> With keen obligation
                                 towards
                                 excellence, we have been engrossed
                                 in the realm of delivering to ...</div>
@@ -370,7 +371,7 @@ function handleClick(element) {
                     </div>
                 </div>
                 <div class="relative rounded-lg flex justify-center z-0">
-                    <div class="absolute z-20  w-[350px] h-[900px] overflow-hidden">
+                    <div class="absolute z-20  lg:w-[350px] lg:h-[900px] w-[300px] overflow-hidden">
                         <img src="./images/restaurant1.png"
                             class=" rounded-b-full h-[350px] w-full hover:rounded-b-full  object-cover ">
                     </div>
@@ -385,7 +386,7 @@ function handleClick(element) {
                             <div class="flex justify-center text-yellow-400 font-extrabold lg:text-4xl text-2xl pb-5">
                                 Fine Dining
                             </div>
-                            <div class="flex justify-center w-80 text-white lg:text-xl text-xl"> An ambiance of relaxed
+                            <div class="flex justify-center lg:w-80  text-white lg:text-xl text-base lg:p-0 p-3 lg:-my-0 -my-6"> An ambiance of relaxed
                                 sophistication and a comfortable
                                 environment make Rasassi a place
                                 where you ...</div>

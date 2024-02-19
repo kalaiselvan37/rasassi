@@ -97,11 +97,11 @@
 }
 
 .pulse {
-    animation: pulse 1.5s ease-in-out infinite;
+    animation: pulse 6s ease-in-out infinite;
 }
 
 .heartbeat {
-    animation: heartbeat 5s ease-in-out infinite;
+    animation: heartbeat 15s ease-in-out infinite;
 }
 
 .flip {
