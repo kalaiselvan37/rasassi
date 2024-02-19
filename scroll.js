@@ -59,38 +59,18 @@ if (
 });
 }
 window.addEventListener('scroll', shakeOnScroll);
-
 document.addEventListener("DOMContentLoaded", function() {
-    // Get the current URL
     var currentUrl = window.location.pathname;
 
-    // Check if the current URL matches the home page URL
     if (currentUrl === '#menu') {
-        // If it does, add a specific class to the "Home" link by its id
         document.getElementById('menu').classList.add('text-red-800', 'md:text-xl');
     }
 });
 
-
-
-
-// document.addEventListener("DOMContentLoaded", function () {
-//     const menuLinks = document.querySelectorAll("#navbar-default a");
-//     menuLinks[0].classList.add("active");
-//     menuLinks.forEach(function (link) {
-//         link.addEventListener("click", function (event) {
-//             menuLinks.forEach(function (link) {
-//                 link.classList.remove("active");
-//             });
-//             this.classList.add("active");
-//         });
-//     });
-// });
-
-function handleClick(element) {
-    const links = document.querySelectorAll('a');
-    links.forEach(link => {
-        link.classList.remove('active');
+const buttons = document.querySelectorAll('a');
+buttons.forEach(button => {
+    button.addEventListener('click', function() {
+        buttons.forEach(btn => btn.classList.remove('active'));
+        this.classList.add('active');
     });
-    element.classList.add('active');
-}
+});
