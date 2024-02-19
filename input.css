@@ -77,7 +77,7 @@
 }
 
 .bounce {
-    animation: bounce 1.5s ease-in-out infinite;
+    animation: bounce 8s ease-in-out infinite;
 }
 
 .fade {
@@ -85,7 +85,7 @@
 }
 
 .zoom {
-    animation: zoom 1.5s ease-in-out infinite;
+    animation: zoom 10s ease-in-out infinite;
 }
 
 .slide {
@@ -93,7 +93,7 @@
 }
 
 .spin {
-    animation: spin 10s linear infinite;
+    animation: spin 25s linear infinite;
 }
 
 .pulse {
