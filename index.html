@@ -11,6 +11,15 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Pacifico&family=Satisfy&family=Yellowtail&display=swap" rel="stylesheet">
     <title>Rasassi</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    const toggleButton = document.getElementById('toggleButton');
+    const navbar = document.getElementById('navbar-default');
+    toggleButton.addEventListener('click', function () {
+        navbar.classList.toggle('hidden');
+    });
+});
+    </script>
 </head>
 <body>
     <header class="bg-white max-w-full sticky top-0 z-20 shadow-lg">
@@ -62,7 +71,7 @@
             <div class="absolute lg:top-[180px] lg:left-[300px] left-[100px] top-[100px] ">
                 <p class="text-3xl md:text-center font-semibold bg-orange-300 p-2 leading-0">Experience</p>
             </div>
-            <div class="absolute lg:top-[270px] lg:left-[290px] -left-[10px] top-[190px]"> <img src="./images/the_real_taste.png"
+            <div class="absolute lg:top-[270px] lg:left-[290px] -left-[9px] top-[190px]"> <img src="./images/the_real_taste.png"
                     alt="" class="lg:h-full h-20 lg:w-full w-[350px] lg:mx-0 mx-5"></div>
             <div class="absolute lg:top-[380px] lg:left-[300px] top-[270px] text-center">
                 <p class="lg:text-9xl text-8xl font-extrabold text-lime-600 ">India</p>
@@ -243,11 +252,16 @@
     </div>
     </section> -->
     <!-- Restaurant card -->
-    <section class="lg:py-20 py-10 relative">
-        <div class="absolute lg:-top-10 lg:left-[247px] lg:w-[1400px] left-[20px] w-[90%] lg:h-48 bg-yellow-400 rounded-xl text-center pt-3 text-xl lg:text-5xl font-bold mt-10">
-            Our Other Services
+    <section class="lg:py-20 py-10 pb-14  relative">
+        <div class="text-5xl mb-4 font-extrabold text-center block">
+            <span class=" inset-x-0 bottom-0 h-4 w-32 bg-yellow-400"></span>
+            <span class=" z-10 text-black">Our Other Services</span>
         </div>
-             
+
+<div class="absolute lg:-top-12 lg:left-[247px] lg:w-[1400px] left-[20px] w-[90%] lg:h-48 bg-yellow-400 rounded-xl text-center pt-3 text-xl lg:text-5xl font-bold mt-28 hidden lg:block">
+    Our Other Services
+</div>
+
         <div class="max-w-[85rem] mx-auto px-6 relative">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 space-y-6 xl:space-y-0">
                 <div class="relative rounded-lg flex justify-center  z-0">
@@ -342,7 +356,7 @@
             </div>
         </div>
     </section>
-    <section class="lg:py-20 top-[500px] bg-black">
+    <section class="lg:py-20 py bg-black">
         <div class="max-w-[85rem] mx-auto   ">
             <div class="text-center ">
                 <h1 class="text-white p-2">Excellent</h1>
