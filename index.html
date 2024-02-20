@@ -8,56 +8,59 @@
     <link rel="stylesheet" href="./node_modules/@flaticon/flaticon-uicons/css/all/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Pacifico&family=Satisfy&family=Yellowtail&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Pacifico&family=Satisfy&family=Yellowtail&display=swap"
+        rel="stylesheet">
     <title>Rasassi</title>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-    const toggleButton = document.getElementById('toggleButton');
-    const navbar = document.getElementById('navbar-default');
-    toggleButton.addEventListener('click', function () {
-        navbar.classList.toggle('hidden');
-    });
-});
+            const toggleButton = document.getElementById('toggleButton');
+            const navbar = document.getElementById('navbar-default');
+            toggleButton.addEventListener('click', function () {
+                navbar.classList.toggle('hidden');
+            });
+        });
 
-// Scroll to Contact section
-document.addEventListener("DOMContentLoaded", function () {
-    document.querySelector('a[href="#contact"]').addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector('#contact').scrollIntoView({
-            behavior: 'smooth'
+        // Scroll to Contact section
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelector('a[href="#contact"]').addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector('#contact').scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+            // Scroll to Home section
+            document.querySelector('a[href="#home"]').addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector('#home').scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+            // Scroll to Reserve now section
+            document.querySelector('a[href="#reservenow"]').addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector('#reservenow').scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+            // Scroll to About Us section
+            document.querySelector('a[href="#aboutus"]').addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector('#aboutus').scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+            // Scroll to menu section
+            document.querySelector('a[href="#menu"]').addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector('#menu').scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
         });
-    });
-    // Scroll to Home section
-    document.querySelector('a[href="#home"]').addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector('#home').scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-    // Scroll to Reserve now section
-    document.querySelector('a[href="#reservenow"]').addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector('#reservenow').scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-    // Scroll to About Us section
-    document.querySelector('a[href="#aboutus"]').addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector('#aboutus').scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-    // Scroll to menu section
-    document.querySelector('a[href="#menu"]').addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector('#menu').scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
-function handleClick(element) {
+
+        function handleClick(element) {
             const links = document.querySelectorAll('a');
             links.forEach(link => {
                 link.classList.remove('active');
@@ -66,6 +69,7 @@ function handleClick(element) {
         }
     </script>
 </head>
+
 <body>
     <header class="bg-white max-w-full sticky top-0 z-20 shadow-lg">
         <nav class="bg-white border-gray-200 border-r-0">
@@ -82,22 +86,30 @@ function handleClick(element) {
                     </svg>
                 </button>
                 <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-                    <ul 
+                    <ul
                         class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white ">
                         <li>
-                            <a href="#home" onclick="handleClick(this)"  class="block py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-800 md:p-0 text-xl active" aria-current="page">Home</a>
+                            <a href="#home" onclick="handleClick(this)"
+                                class="block py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-800 md:p-0 text-xl active"
+                                aria-current="page">Home</a>
                         </li>
                         <li>
-                            <a href="#menu" onclick="handleClick(this)"   class="block py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-800 md:p-0 text-xl">Menu</a>
+                            <a href="#menu" onclick="handleClick(this)"
+                                class="block py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-800 md:p-0 text-xl">Menu</a>
                         </li>
                         <li>
-                            <a href="#aboutus"  onclick="handleClick(this)" class="block py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-800 md:p-0 text-xl">About Us</a>
+                            <a href="#aboutus" onclick="handleClick(this)"
+                                class="block py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-800 md:p-0 text-xl">About
+                                Us</a>
                         </li>
                         <li>
-                            <a href="#reservenow" onclick="handleClick(this)"  class="block py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-800 md:p-0 text-xl">Reserve Now</a>
+                            <a href="#reservenow" onclick="handleClick(this)"
+                                class="block py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-800 md:p-0 text-xl">Reserve
+                                Now</a>
                         </li>
                         <li>
-                            <a href="#contact" onclick="handleClick(this)" class="block py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-800 md:p-0 text-xl">Contact</a>
+                            <a href="#contact" onclick="handleClick(this)"
+                                class="block py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-800 md:p-0 text-xl">Contact</a>
                         </li>
                         <li class="hidden md:block bg-orange-300 p-5 rounded-xl text-lg py-1">
                             Call: +1 258469584
@@ -110,31 +122,35 @@ function handleClick(element) {
     <div class="absolute overflow-hidden top-0 right-0 bg-[url('https://kalaiselvan37.github.io/rasassi/images/rectangle_4.png')] w-full md:w-[850px] h-[1100px] bg-no-repeat
      hidden lg:block xl:block md:block">
     </div>
-    
+
     <section class="relative md:top-5" id="home">
         <div class="max-w-[50rem] mx-auto lg:h-[980px] h-[640px]">
             <div class="absolute lg:top-[180px] lg:left-[300px] left-[100px] top-[80px] ">
                 <p class="text-3xl md:text-center font-semibold bg-orange-300 p-2 leading-0">Experience</p>
             </div>
-            <div class="absolute lg:top-[270px] lg:left-[290px] -left-[9px] top-[170px]"> <img src="./images/the_real_taste.png"
-                    alt="" class="lg:h-full h-20 lg:w-full w-[350px] lg:mx-0 mx-5"></div>
+            <div class="absolute lg:top-[270px] lg:left-[290px] -left-[9px] top-[170px]"> <img
+                    src="./images/the_real_taste.png" alt="" class="lg:h-full h-20 lg:w-full w-[350px] lg:mx-0 mx-5">
+            </div>
             <div class="absolute lg:top-[380px] lg:left-[300px] top-[270px] text-center">
                 <p class="lg:text-9xl text-8xl font-extrabold text-lime-600 ">India</p>
-                <img src="./images/tasty-tandoori-chicken-plate.png" class=" lg:hidden mt-4 " alt="">
+                <img src="./images/header.png" class=" lg:hidden mt-4 " alt="">
             </div>
             <div class="absolute top-[650px] left-[1190px]"> <img src="./images/tasty-tandoori-chicken-plate.png"
                     alt=""> </div>
-            <div class="absolute top-[50px] left-[1020px] hidden md:block shake"> <img src="./images/layer_22.png" alt="">
+            <div class="absolute top-[50px] left-[1020px] hidden md:block shake"> <img src="./images/layer_22.png"
+                    alt="">
             </div>
-            <div class="absolute lg:top-[90px] lg:left-[650px] lg:rotate top-[270px] left-[320px] "> 
+            <div class="absolute lg:top-[90px] lg:left-[650px] lg:rotate top-[270px] left-[320px] ">
                 <img src="./images/layer_16.png" alt="" class="lg:h-full h-10  "> </div>
             <div class="absolute top-[60px] left-[380px] hidden md:block">
-                <img src="./images/layer_25_copy.png" alt="" > </div>
+                <img src="./images/layer_25_copy.png" alt=""> </div>
             <div class="absolute top-[400px] left-[110px] hidden md:block"> <img src="./images/layer_25.png" alt="">
             </div>
-            <div class="absolute lg:top-[150px] lg:left-[90px] top-[390px] left-5  bounce"> <img src="./images/layer_29.png" alt="" class="lg:h-full lg:w-full h-10">
+            <div class="absolute lg:top-[150px] lg:left-[90px] top-[390px] left-5  bounce"> <img
+                    src="./images/layer_29.png" alt="" class="lg:h-full lg:w-full h-10">
             </div>
-            <div class="absolute top-[650px] left-[60px]  lg:fade hidden md:block"> <img src="./images/layer_18.png" alt="">
+            <div class="absolute top-[650px] left-[60px]  lg:fade hidden md:block"> <img src="./images/layer_18.png"
+                    alt="">
             </div>
             <div class="absolute lg:top-[600px] lg:left-[460px] top-[270px]  left-6 zoom">
                 <img src="./images/layer_20.png" alt="" class="lg:h-full h-10"> </div>
@@ -148,13 +164,13 @@ function handleClick(element) {
             </div>
             <div class="absolute top-[400px] left-[900px]   heartbeat"> <img src="./images/layer_21.png" alt="">
             </div>
-            <div class="absolute lg:top-[770px] lg:left-[350px] top-[560px] left-[290px]  pulse">
+            <div class="absolute lg:top-[770px] lg:left-[350px] top-[380px] left-[300px]  pulse">
                 <img src="./images/layer_19.png" alt="" class="lg:h-full lg:w-full h-10"> </div>
             <div class="absolute top-[760px] left-[700px]  "> <img src="./images/layer_26.png" alt="">
             </div>
             <div class="absolute top-[780px] left-[950px]  spin"> <img src="./images/layer_17.png" alt="">
             </div>
-            </div>
+        </div>
     </section>
     </div>
     </div>
@@ -207,7 +223,7 @@ function handleClick(element) {
                         <a href="https://rasassionline.com/" target="_blank">
                             <img src="./images/order_now.png" alt="Order Now">
                         </a>
-                    </div>                                    
+                    </div>
                 </div>
             </div>
         </div>
@@ -248,11 +264,11 @@ function handleClick(element) {
                     <div class="relative p-0 z-10">
                         <img src="./images/group-members.png"
                             class="hidden md:block border-2 rounded-r-full w-[350px] h-[500px] lg:w-[700px] lg:h-[930px] border-yellow-400 border-l-0">
-                    
+
                         <img src="./images/group-members.png"
-                            class="block md:hidden border-2 rounded-b-full w-full h-auto border-yellow-400">
+                            class="block md:hidden border-2 rounded-b-full w-full h-auto -my-5 border-yellow-400">
                     </div>
-                    
+
                 </div>
                 <div class="py-5 px-0 md:py-2 overflow-x-hidden">
                     <div class="px-5 lg:px-24 lg:-mx-7 lg:p-10">
@@ -273,9 +289,11 @@ function handleClick(element) {
                             <h3 class="text-white pb-2 text-2xl">So if you want to visit the best restaurant in
                                 Altrincham and satisfy your hunger, take a look at our menu now.</h3>
                             <div class="lg:px-20 lg:py-14 text-yellow-400">
-                               <div class="satisfy-regular  lg:text-5xl text-2xl  ">We speak the good food language</div>
-                               <div class="satisfy-regular  lg:text-5xl lg:py-8 text-2xl">The only thing we're serious about is food</div>
-                               <div class="satisfy-regular  lg:text-5xl text-2xl">The good side of the food</div>
+                                <div class="satisfy-regular  lg:text-5xl text-2xl  ">We speak the good food language
+                                </div>
+                                <div class="satisfy-regular  lg:text-5xl lg:py-8 text-2xl">The only thing we're serious
+                                    about is food</div>
+                                <div class="satisfy-regular  lg:text-5xl text-2xl">The good side of the food</div>
 
                             </div>
                     </div>
@@ -302,14 +320,15 @@ function handleClick(element) {
     </section> -->
     <!-- Restaurant card -->
     <section class="lg:py-20  pb-14  relative">
-        <div class="text-5xl mb-4 font-extrabold text-center block">
-            <span class=" inset-x-0 bottom-0 h-4 w-32 bg-yellow-400"></span>
-            <span class=" z-10 text-black">Our Other Services</span>
-        </div>
-        <div class="absolute lg:-top-12 lg:left-[247px] lg:w-[1400px] left-[20px] w-[90%] lg:h-48 bg-yellow-400 rounded-xl text-center pt-3 text-xl lg:text-5xl font-bold mt-28 hidden lg:block">
+        <div class="max-w-[85rem] mx-auto px-6 ">
+            <div class="text-5xl mb-4 font-extrabold block">
+                <span class=" inset-x-0 bottom-0 h-4 w-32 bg-yellow-400"></span>
+                <span class=" z-10 text-black">Our Other Services</span>
+            </div>
+        <div
+            class="absolute lg:-top-24 lg:left-[247px] lg:w-[1400px] left-[20px] w-[90%] lg:h-48 bg-yellow-400 rounded-xl text-center pt-9 text-xl lg:text-5xl font-bold mt-28 hidden lg:block">
             Our Other Services
         </div>
-        <div class="max-w-[85rem] mx-auto px-6 relative">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 space-y-6 xl:space-y-0">
                 <div class="relative rounded-lg flex justify-center  z-0">
                     <div class="absolute z-20  lg:w-[350px] lg:h-[900px] w-[300px] overflow-hidden">
@@ -326,7 +345,9 @@ function handleClick(element) {
                         <div class="">
                             <div class="flex justify-center text-yellow-400 font-extrabold lg:text-4xl text-2xl pb-5 ">
                                 Parties</div>
-                            <div class="flex justify-center w-80 text-white lg:text-xl text-base lg:p-0 p-3 lg:-my-0 -my-6"> You can reserve the
+                            <div
+                                class="flex justify-center w-80 text-white lg:text-xl text-base lg:p-0 p-3 lg:-my-0 -my-6">
+                                You can reserve the
                                 space for parties
                                 and have the best memories with
                                 your loved ...</div>
@@ -356,7 +377,9 @@ function handleClick(element) {
                             <div class="flex justify-center text-yellow-400 font-extrabold lg:text-4xl text-2xl pb-5">
                                 Outdoor
                                 Catering</div>
-                            <div class="flex justify-center  w-80 text-white lg:text-xl text-base lg:p-0 p-3 lg:-my-0 -my-6"> With keen obligation
+                            <div
+                                class="flex justify-center  w-80 text-white lg:text-xl text-base lg:p-0 p-3 lg:-my-0 -my-6">
+                                With keen obligation
                                 towards
                                 excellence, we have been engrossed
                                 in the realm of delivering to ...</div>
@@ -386,7 +409,9 @@ function handleClick(element) {
                             <div class="flex justify-center text-yellow-400 font-extrabold lg:text-4xl text-2xl pb-5">
                                 Fine Dining
                             </div>
-                            <div class="flex justify-center lg:w-80  text-white lg:text-xl text-base lg:p-0 p-3 lg:-my-0 -my-6"> An ambiance of relaxed
+                            <div
+                                class="flex justify-center lg:w-80  text-white lg:text-xl text-base lg:p-0 p-3 lg:-my-0 -my-6">
+                                An ambiance of relaxed
                                 sophistication and a comfortable
                                 environment make Rasassi a place
                                 where you ...</div>
@@ -512,7 +537,7 @@ function handleClick(element) {
         <div class="max-w-[85rem] mx-auto px-4">
             <div class="grid grid-cols-1">
                 <div class="mb-10">
-                    <h1 class="text-2xl md:text-3xl lg:text-4xl text-center font-bold">Awards</h1>
+                    <h1 class="text-5xl font-bold md:text-3xl lg:text-4xl lg:text-center">Awards</h1>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -525,14 +550,17 @@ function handleClick(element) {
                 <div>
                     <img src="./images/award3.png" class=" w-full" />
                 </div>
-                <div>
-                    <img src="./images/award4.png" class="lg:h-auto lg:w-60  mx-8" />
+                <div class="d-flex justify-content-center text-center">
+                    <img src="./images/award4.png" class="lg:h-auto lg:w-60 mx-auto" />
                 </div>
+                
             </div>
 
     </section>
     <!-- Footer -->
-    <div class="h-[100px] w-full bg-[url('./images/Layer.png')]"></div>
+    <div class="">
+        <img src="/images/img.jpg" alt="" class="lg:h-full lg:w-full h-5">
+    </div>
     <footer class="bg-black text-white" id="contact">
         <div class="container mx-auto px-4  pb-6">
             <div class="grid grid-cols lg:grid-cols-4 gap-4">
@@ -541,9 +569,9 @@ function handleClick(element) {
                     <p class="text-white text-lg mt-4">Experience the most exquisite fine dinning restaurant in city</p>
                     <div class="pt-5 flex">
                         <div class="flex">
-                            <button class="rounded-full bg-slate-800 text-white py-2 px-3 me-2"><i class="fi fi-brands-twitter-alt"></i></button>
-                            <button class="rounded-full bg-slate-800 text-white py-2 px-3 me-2"><i class="fi fi-brands-facebook"></i></button>
-                            <button class="rounded-full bg-slate-800 text-white py-2 px-3"><i class="fi fi-brands-instagram"></i></button>
+                            <button class="rounded-full bg-slate-800 text-white py-2 px-3 me-2"><img src="/images/social-media.png" alt="" class="h-6 w-6 bg-white"></button>
+                            <button class="rounded-full bg-slate-800 text-white py-2 px-3 me-2"><img src="/images/facebook (1).png" alt="" class="h-6 w-6 bg-white"></i></button>
+                            <button class="rounded-full bg-slate-800 text-white py-2 px-3"><img src="/images/instagram (2).png" alt="" class="h-6 w-6 bg-white"></button>
                         </div>
                     </div>
                 </div>
@@ -588,7 +616,7 @@ function handleClick(element) {
 
         </div>
     </footer>
-    <div class="py-4 pb-4 text-center">
+    <div class="py-4 pb-4 text-center bg-yellow-500 text-white font-bold">
         Copyright ©2024 All rights reserved
     </div>
 </body>
