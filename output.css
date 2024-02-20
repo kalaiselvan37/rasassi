@@ -823,6 +823,22 @@ video {
   top: 80px;
 }
 
+.top-\[150px\] {
+  top: 150px;
+}
+
+.top-\[160px\] {
+  top: 160px;
+}
+
+.top-\[250px\] {
+  top: 250px;
+}
+
+.top-\[240px\] {
+  top: 240px;
+}
+
 .z-0 {
   z-index: 0;
 }
