@@ -122,24 +122,31 @@
     <div class="absolute overflow-hidden top-0 right-0 bg-[url('https://kalaiselvan37.github.io/rasassi/images/rectangle_4.png')] w-full md:w-[850px] h-[1100px] bg-no-repeat
      hidden lg:block xl:block md:block">
     </div>
-
-
     <section class="relative md:top-5" id="home">
-        <div class="max-w-[50rem] mx-auto lg:h-[980px] h-[640px]">
+        <div class="max-w-[49rem] mx-auto lg:h-[980px] h-[640px]">
             <div class="absolute lg:top-[180px] lg:left-[300px] left-[100px] top-[80px] ">
                 <p class="text-3xl md:text-center font-semibold bg-orange-300 p-2 leading-0">Experience</p>
             </div>
-            <div class="absolute lg:top-[270px] lg:left-[290px] -left-[9px] top-[170px]"> <img
-                    src="./images/the_real_taste.png" alt="" class="lg:h-full h-20 lg:w-full w-[350px] lg:mx-0 mx-5">
+            <div class="absolute lg:top-[270px] lg:left-[290px] left-[12px] top-[170px]"> <img
+                    src="./images/the_real_taste.png" alt="" class="lg:h-full h-20 lg:w-full w-[330px] lg:mx-0 mx-5">
             </div>
             <div class="absolute lg:top-[380px] lg:left-[300px] top-[270px] text-center">
                 <p class="lg:text-9xl text-8xl font-extrabold text-lime-600 ">India</p>
                 <img src="./images/header.png" class=" lg:hidden mt-4 " alt="">
             </div>
             <div class="absolute top-[650px] left-[1190px]"> <img src="./images/tasty-tandoori-chicken-plate.png"
-                    alt="" class=""> </div>
-                    <a href="#menu"  onclick="handleClick(this)" class=" top-[800px] left-[1700px] fixed"> <img src="./images/book-now.png"
-                        alt="" class="h-[100px]"> </a>
+                    alt=""> </div>
+                    <div class=" top-[800px] left-[1700px] fixed">
+                    <a href="https://rasassionline.com/" target="_blank"> <img src="./images/order-now1.png"
+                        alt="" class="h-[110px]"> </a></div>
+                        <div class="lg:hidden">
+                            <div class="fixed bottom-4 left-4 z-50">
+                                <a href="https://rasassionline.com/" target="_blank">
+                                    <img src="./images/order-now1.png" alt="" class="h-16">
+                                </a>
+                            </div>
+                        </div>
+                        
             <div class="absolute top-[50px] left-[1020px] hidden md:block shake"> <img src="./images/layer_22.png"
                     alt="">
             </div>
@@ -178,7 +185,7 @@
     </div>
     </div>
     <!-- Food and order now  -->
-    <section class="lg:py-7 " id="menu">
+    <section class="lg:py-10 " id="menu">
         <div class="max-w-[85rem] mx-auto px-4">
             <div class="text-2xl font-semibold">Popular Dishes</div>
             <div class="text-5xl mb-4 font-extrabold relative">
@@ -189,7 +196,7 @@
                 <div class="relative rounded-lg">
                     <div class="absolute z-10 cut-image rounded-lg overflow-hidden">
                         <img src="./images/Layer10.png"
-                            class="scale-100 h-full w-full object-cover rounded-tl-lg rounded-tr-lg">
+                            class="scale-100 h-full w-full object-cover rounded-tl-lg rounded-tr-lg transition-transform duration-600 hover:transform hover:scale-105">
                     </div>
                     <div class="relative top-8">
                         <img src="./images/Rectangle 8 copy.png">
@@ -203,7 +210,7 @@
                 <div class="relative rounded-lg">
                     <div class="absolute z-10 cut-image rounded-lg overflow-hidden">
                         <img src="./images/foodmaterial.png"
-                            class="scale-100  h-full w-full object-cover rounded-tl-lg rounded-tr-lg">
+                            class="scale-100  h-full w-full object-cover rounded-tl-lg rounded-tr-lg transition-transform duration-600 hover:transform hover:scale-105">
                     </div>
                     <div class="relative top-8">
                         <img src="./images/Rectangle 8 copy.png">
@@ -217,7 +224,7 @@
                 <div class="relative rounded-lg">
                     <div class="absolute z-10 cut-image rounded-lg overflow-hidden">
                         <img src="./images/foodmaterial1.png"
-                            class="scale-100 h-full w-full object-cover rounded-tl-lg rounded-tr-lg">
+                            class="scale-100 h-full w-full object-cover rounded-tl-lg rounded-tr-lg transition-transform duration-600 hover:transform hover:scale-105">
                     </div>
                     <div class="relative top-8">
                         <img src="./images/Rectangle 8 copy.png">
@@ -322,21 +329,25 @@
     </div>
     </section> -->
     <!-- Restaurant card -->
-    <section class="lg:py-20  pb-14  relative">
-        <div class="max-w-[85rem] mx-auto px-6 ">
-            <div class="text-5xl mb-4 font-extrabold block">
-                <span class=" inset-x-0 bottom-0 h-4 w-32 bg-yellow-400"></span>
-                <span class=" z-10 text-black">Our Other Services</span>
+    <section class="lg:py-20 pb-14 relative">
+        <div class="max-w-[85rem] mx-auto px-6">
+            <!-- Mobile view -->
+            <div class="lg:hidden">
+                <div class="relative">
+                    <span class="absolute inset-x-0 bottom-0 h-4 w-32 bg-yellow-400"></span>
+                    <div class="text-5xl mb-4 font-extrabold">
+                        <span class="relative z-10 text-black">Our Other Services</span>
+                    </div>
+                </div>
             </div>
-        <div
-            class="absolute lg:-top-24 lg:left-[247px] lg:w-[1400px] left-[20px] w-[90%] lg:h-48 bg-yellow-400 rounded-xl text-center pt-9 text-xl lg:text-5xl font-bold mt-28 hidden lg:block">
-            Our Other Services
-        </div>
+            <!-- Desktop view -->
+            <div class="absolute lg:-top-36 2xl:left-[247px] 2xl:w-[1400px] xl:w-[1230px] lg:h-48 bg-yellow-400 rounded-xl text-center pt-9 text-xl lg:text-5xl font-bold mt-28 hidden lg:block">
+                Our Other Services
+            </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 space-y-6 xl:space-y-0">
                 <div class="relative rounded-lg flex justify-center  z-0">
-                    <div class="absolute z-20  lg:w-[350px] lg:h-[900px] w-[300px] overflow-hidden">
-                        <img src="./images/cardpic1.png"
-                            class=" rounded-b-full h-[350px] hover:rounded-b-full  object-cover ">
+                    <div class="absolute z-20 lg:w-[350px] lg:h-[900px] w-[300px] overflow-hidden">
+                        <img src="./images/cardpic1.png" class="rounded-b-full h-[350px] object-cover transition-transform duration-600 hover:transform hover:scale-105">
                     </div>
                     <div class="absolute z-10  overflow-hidden">
                         <img src="./images/background2round.png" class=" rounded-lg object-cover ">
@@ -365,9 +376,8 @@
                     </div>
                 </div>
                 <div class="relative rounded-lg flex justify-center z-0">
-                    <div class="absolute z-20  lg:w-[350px] lg:h-[900px] w-[300px] overflow-hidden">
-                        <img src="./images/restaurant.png"
-                            class=" rounded-b-full h-[350px]  hover:rounded-b-full  object-cover ">
+                    <div class="absolute z-20 lg:w-[350px] lg:h-[900px] w-[300px] overflow-hidden">
+                        <img src="./images/restaurant.png" class="rounded-b-full h-[350px] object-cover transition-transform duration-600 hover:transform hover:scale-105">
                     </div>
                     <div class="absolute z-10  overflow-hidden">
                         <img src="./images/background2round.png" class=" rounded-lg object-cover ">
@@ -399,7 +409,7 @@
                 <div class="relative rounded-lg flex justify-center z-0">
                     <div class="absolute z-20  lg:w-[350px] lg:h-[900px] w-[300px] overflow-hidden">
                         <img src="./images/restaurant1.png"
-                            class=" rounded-b-full h-[350px] w-full hover:rounded-b-full  object-cover ">
+                            class=" rounded-b-full h-[350px] w-full hover:rounded-b-full  object-cover transition-transform duration-600 hover:transform hover:scale-105 ">
                     </div>
                     <div class="absolute z-10  overflow-hidden">
                         <img src="./images/background2round.png" class=" rounded-lg object-cover ">
@@ -539,9 +549,19 @@
     <section class="lg:py-20 py-10">
         <div class="max-w-[85rem] mx-auto px-4">
             <div class="grid grid-cols-1">
-                <div class="mb-10">
-                    <h1 class="text-5xl font-bold md:text-3xl lg:text-4xl lg:text-center">Awards</h1>
+                <div class="lg:hidden">
+                    <div class="relative">
+                        <span class="absolute inset-x-0 bottom-0 h-4 w-32 bg-yellow-400"></span>
+                        <div class="text-5xl mb-4 font-extrabold">
+                            <span class="relative z-10 text-black">Awards</span>
+                        </div>
+                    </div>
                 </div>
+                <!-- Desktop view -->
+                <div class="hidden lg:block text-center ">
+                    <h1 class="text-5xl font-extrabold mb-8">Awards</h1>
+                </div>
+                
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div>
@@ -581,9 +601,9 @@
                         </div>
                     </div>
                 </div>
-                <div>
-                    <p class="font-semibold  text-xl py-10">Open Hours</p>
-                    <div class="grid grid-cols-2 gap-2">
+                <div class="py-10">
+                    <p class="font-semibold  text-xl text-yellow-500">Open Hours :</p>
+                    <div class="grid grid-cols-2 gap-2 mt-4">
                         <p class="">Monday</p>
                         <p>09:00 - 23:00</p>
                         <p class="">Tuesday</p>
@@ -602,14 +622,17 @@
                 </div>
                 <div>
                     <p class="font-semibold lg:mb-12 text-xl"> </p>
-                    <div class="py-14">
-                        <p class=""><span class="text-amber-400">Phone :</span> 0161 9281430</p>
-                        <p class=""><span class="text-amber-400">E-mail :</span> tablebooking@rasassiuk.com</p>
-                        <p class=""><span class="text-amber-400">Address :</span> 21, The Downs, Altrincham, WA14 2QD</p>
+                    <div class="">
+                        <div class="text-yellow-500 font-semibold">Phone :</div>
+                        <div class="text-2xl font-semibold">0161 9281430</div>
+                        <div class="text-yellow-500 font-semibold">Email :</div>
+                        <div class="text-2xl font-semibold">tablebooking@rasassiuk.com</div>
+                        <div class="text-yellow-500 font-semibold">Address :</div>
+                        <div class="text-2xl font-semibold flex-wrap">21, The Downs, Altrincham, WA14 2QD</div>
                     </div>
                 </div>
                 <div>
-                    <p class="font-semibold  text-xl lg:py-10 ">Instagram</p>
+                    <p class="font-semibold  text-xl lg:py-10 text-yellow-500">Instagram</p>
                     <div class="grid grid-cols-2">
                         <img src="./images/1.jpg" alt="">
                         <img src="./images/2.jpg" alt="">
