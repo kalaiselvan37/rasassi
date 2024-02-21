@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--  -->
     <link href="./output.css" rel="stylesheet">
     <link rel="stylesheet" href="./node_modules/@flaticon/flaticon-uicons/css/all/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -13,61 +14,7 @@
         href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Pacifico&family=Satisfy&family=Yellowtail&display=swap"
         rel="stylesheet">
     <title>Rasassi</title>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const toggleButton = document.getElementById('toggleButton');
-            const navbar = document.getElementById('navbar-default');
-            toggleButton.addEventListener('click', function () {
-                navbar.classList.toggle('hidden');
-            });
-        });
-
-        // Scroll to Contact section
-        document.addEventListener("DOMContentLoaded", function () {
-            document.querySelector('a[href="#contact"]').addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector('#contact').scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-            // Scroll to Home section
-            document.querySelector('a[href="#home"]').addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector('#home').scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-            // Scroll to Reserve now section
-            document.querySelector('a[href="#reservenow"]').addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector('#reservenow').scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-            // Scroll to About Us section
-            document.querySelector('a[href="#aboutus"]').addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector('#aboutus').scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-            // Scroll to menu section
-            document.querySelector('a[href="#menu"]').addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector('#menu').scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-
-        function handleClick(element) {
-            const links = document.querySelectorAll('a');
-            links.forEach(link => {
-                link.classList.remove('active');
-            });
-            element.classList.add('active');
-        }
-    </script>
+    <script src="./scroll.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -563,6 +510,6 @@
         Copyright ©2024 All rights reserved
     </div>
 </body>
-<script src="/scroll.js" type="text/javascript"></script>
+
 
 </html>
