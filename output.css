@@ -873,6 +873,21 @@ video {
   margin-bottom: 1rem;
 }
 
+.mx-10 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
+.mx-\[50\%\] {
+  margin-left: 50%;
+  margin-right: 50%;
+}
+
+.mx-\[40\%\] {
+  margin-left: 40%;
+  margin-right: 40%;
+}
+
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -895,6 +910,10 @@ video {
 
 .mt-4 {
   margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
 }
 
 .block {
@@ -997,6 +1016,10 @@ video {
   height: 100%;
 }
 
+.h-40 {
+  height: 10rem;
+}
+
 .max-h-full {
   max-height: 100%;
 }
@@ -1079,6 +1102,10 @@ video {
 
 .max-w-screen-xl {
   max-width: 1280px;
+}
+
+.max-w-\[90rem\] {
+  max-width: 90rem;
 }
 
 .scale-100 {
@@ -1268,6 +1295,14 @@ video {
   background-image: url('https://kalaiselvan37.github.io/rasassi/images/rectangle_4.png');
 }
 
+.bg-\[url\(\'\.\/images\/rectangle_4\.png\'\)\] {
+  background-image: url('./images/rectangle_4.png');
+}
+
+.bg-\[url\(\'\.\/images\/google-review\.jpg\'\)\] {
+  background-image: url('./images/google-review.jpg');
+}
+
 .bg-repeat {
   background-repeat: repeat;
 }
@@ -1364,6 +1399,16 @@ video {
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+}
+
+.px-7 {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 .pb-14 {
@@ -1962,8 +2007,46 @@ video {
     margin-right: 0px;
   }
 
+  .lg\:mx-20 {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
+  .lg\:-mx-20 {
+    margin-left: -5rem;
+    margin-right: -5rem;
+  }
+
+  .lg\:mx-10 {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
+
+  .lg\:mx-5 {
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+  }
+
+  .lg\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .lg\:mx-\[40\%\] {
+    margin-left: 40%;
+    margin-right: 40%;
+  }
+
   .lg\:mb-12 {
     margin-bottom: 3rem;
+  }
+
+  .lg\:ml-10 {
+    margin-left: 2.5rem;
+  }
+
+  .lg\:mr-10 {
+    margin-right: 2.5rem;
   }
 
   .lg\:block {
@@ -1996,6 +2079,14 @@ video {
 
   .lg\:h-full {
     height: 100%;
+  }
+
+  .lg\:h-32 {
+    height: 8rem;
+  }
+
+  .lg\:h-28 {
+    height: 7rem;
   }
 
   .lg\:w-60 {
@@ -2066,6 +2157,25 @@ video {
   .lg\:py-8 {
     padding-top: 2rem;
     padding-bottom: 2rem;
+  }
+
+  .lg\:py-5 {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .lg\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .lg\:px-28 {
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
+
+  .lg\:pr-5 {
+    padding-right: 1.25rem;
   }
 
   .lg\:text-4xl {
