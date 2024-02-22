@@ -2078,6 +2078,14 @@ video {
     display: block;
   }
 
+  .xl\:hidden {
+    display: none;
+  }
+
+  .xl\:h-0 {
+    height: 0px;
+  }
+
   .xl\:w-\[1230px\] {
     width: 1230px;
   }
@@ -2092,6 +2100,14 @@ video {
 @media (min-width: 1536px) {
   .\32xl\:left-\[250px\] {
     left: 250px;
+  }
+
+  .\32xl\:hidden {
+    display: none;
+  }
+
+  .\32xl\:h-\[1100px\] {
+    height: 1100px;
   }
 
   .\32xl\:w-\[1400px\] {
