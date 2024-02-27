@@ -44,10 +44,36 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-function handleClick(element) {
-    const links = document.querySelectorAll('a');
-    links.forEach(link => {
-        link.classList.remove('active');
+document.addEventListener("DOMContentLoaded", function () {
+    const menuCardButton = document.querySelector("#menuCardButton");
+    const iframeContainer = document.querySelector("#iframeContainer");
+    const pdfIframe = document.querySelector("#pdfIframe");
+    const closeIframeButton = document.querySelector("#closeIframe");
+    
+    menuCardButton.addEventListener("click", function () {
+        const pdfUrl = "./assets/Documents/Rasassi-NEW-MAIN-MENU.pdf";
+        pdfIframe.src = pdfUrl;
+        iframeContainer.classList.add("visible");
     });
-    element.classList.add('active');
-}
+
+    closeIframeButton.addEventListener("click", function () {
+        iframeContainer.classList.remove("visible"); 
+        pdfIframe.src = "";
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    const images = ["./assets/images/cardpic1.png"]; // Add your image paths here
+    let currentImageIndex = 0;
+    const carousel = document.querySelector('.carousel');
+
+    function showNextImage() {
+        currentImageIndex++;
+        if (currentImageIndex >= images.length) {
+            currentImageIndex = 0;
+        }
+        carousel.style.transform = `translateX(-${currentImageIndex * 100}%)`;
+    }
+
+    setInterval(showNextImage, 5000); // Change image every 5 seconds
+});
