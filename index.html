@@ -31,12 +31,9 @@ rasassiuk, ">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Pacifico&family=Satisfy&family=Yellowtail&display=swap"
-        rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Protest+Revolution&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Dancing+Script:wght@400..700&family=Protest+Revolution&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Protest+Revolution&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Pacifico&family=Satisfy&family=Yellowtail&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Protest+Revolution&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <script src="./scroll.js" type="text/javascript"></script>
 </head>
 
@@ -60,7 +57,7 @@ rasassiuk, ">
                         class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white ">
                         <li>
                             <a href="#home" onclick="handleClick(this)"
-                                class="block py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-800 md:p-0 text-xl active"
+                                class="block py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-800 md:p-0 text-xl active1"
                                 aria-current="page">Home</a>
                         </li>
                         <li>
@@ -98,16 +95,25 @@ rasassiuk, ">
     </header>
 
     <section id="home" class="relative overflow-hidden">
-        <div class="max-w-full w-full mx-auto px-4 lg:px-6 relative z-[1] homehotel-section">
+        <div class="carousel">
+            <img src="./assets/images/slide-1.jpg" alt="" class="carousel-item  w-full h-full object-cover absolute">
+            <img src="./assets/images/cardpic2.png" alt="" class="carousel-item active w-full h-full object-cover absolute">
+            <img src="./assets/images/slide-2.jpg" alt="" class="carousel-item  w-full h-full object-cover absolute">
+            <img src="./assets/images/slide-3.jpg" alt="" class="carousel-item  w-full h-full object-cover absolute">
+
+        </div>
+        <div class="absolute h-full w-full bg-[rgba(18,18,18,0.44)]"></div>
+        <div class="max-w-full w-full mx-auto px-4 lg:px-6 relative z-[1]">
             <div class="grid gap-12 grid-cols min-h-[100vh] justify-items-center items-center">
                 <div class="text-center text-white">
-                    <p class="text-xl lg:text-6xl font-bold text-white mb-5">Experience</p>
-                    <p class="text-4xl lg:text-7xl font-bold mb-5">The Real Taste of</p>
-                    <p class="text-4xl lg:text-6xl font-bold text-white">Indian Cuisine</p>
+                    <p class="text-xl lg:text-6xl font-extrabold text-white mb-5 tinos-regular">Experience</p>
+                    <p class="text-4xl lg:text-7xl font-extrabold mb-5 tinos-regular">The Real Taste of</p>
+                    <p class="text-4xl lg:text-6xl font-extrabold text-white tinos-regular">Indian Cuisine</p>
                 </div>
             </div>
         </div>
     </section>
+    
             <!-- Desktop -->
             <div class=" top-[800px] left-[1700px] fixed z-10">
                 <a href="https://rasassionline.com/" target="_blank"> <img src="./assets/images/order-now3.png"
@@ -196,9 +202,9 @@ rasassiuk, ">
     </section>
     <!-- Dinner and Input Table -->
     <section class="lg:py-10 py-10" id="reservenow">
-        <div class="max-w-[85rem] mx-auto px-8">
+        <div class="max-w-[100rem] mx-auto px-8">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 space-y-6 md:space-y-0">
-                <div> <img src="./assets/images/table.png" alt="" class=""> </div>
+                <div> <img src="./assets/images/table.png" alt="" class="h-auto w-full"> </div>
                 <iframe src="https://widget.thefork.com/cd4f8d58-5ca3-4626-9d9a-ab8e5e1351d1"
                     class="h-[650px] w-full rounded-2xl shadow-md" allow="payment *" style="overflow: scroll;"></iframe>
                 <div>
@@ -212,7 +218,7 @@ rasassiuk, ">
     </div>
     </section> -->
     <!-- Restaurant card -->
-    <section class="lg:py-20 pb-14 relative">
+    <section class="lg:py-20 lg:mt-10 relative">
         <div class="max-w-[85rem] mx-auto px-6">
             <!-- Mobile view -->
             <div class="lg:hidden">
@@ -224,10 +230,11 @@ rasassiuk, ">
                 </div>
             </div>
             <!-- Desktop view -->
-            <div class="absolute lg:-top-36 2xl:left-[250px] 2xl:w-[1400px] xl:w-[1230px] lg:h-48 bg-yellow-400 rounded-xl text-center pt-9 text-xl lg:text-5xl font-bold mt-28 hidden lg:block">
+            <div class="absolute lg:-top-36 2xl:left-[450px] 2xl:w-[1000px] xl:w-[1230px] lg:h-48 bg-yellow-400 rounded-xl text-center pt-9 text-xl lg:text-5xl font-bold mt-28 hidden lg:block">
                 Our Other Services
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 space-y-6 xl:space-y-0">
+            <div class="max-w-[60rem] mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
                 <div class="relative rounded-lg flex justify-center  z-0">
                    
                     <div class="absolute z-20 lg:w-[350px] lg:h-[900px] w-[300px] overflow-hidden">
@@ -253,7 +260,7 @@ rasassiuk, ">
                                 your loved ...</div>
                         </div>
                     </div>
-                    <div class="absolute right-3 lg:-bottom-0 -bottom-2 md:bottom-0 text-xl">
+                    <div class="absolute right-8 lg:-bottom-0 -bottom-2 md:bottom-0 text-xl">
                         <div class="text-black font-bold text-2xl flex my-4 hover:cursor-pointer">
                             Contact Us
                             <button role="button" class="pl-1"><i class="fa-solid fa-circle-chevron-right"
@@ -261,7 +268,7 @@ rasassiuk, ">
                         </div>
                     </div>
                 </div>
-                <div class="relative rounded-lg flex justify-center z-0">
+                <div class="relative rounded-lg flex justify-center z-0 lg:mt-0 mt-10">
                     <div class="absolute z-20 lg:w-[350px] lg:h-[900px] w-[300px] overflow-hidden">
                         <img src="./assets/images/restaurant.png" class="rounded-b-full h-[350px] object-cover transition-transform duration-600 hover:transform hover:scale-105">
                     </div>
@@ -286,7 +293,7 @@ rasassiuk, ">
                                 in the realm of delivering to ...</div>
                         </div>
                     </div>
-                    <div class="absolute right-3 lg:-bottom-0 -bottom-2 md:bottom-0 text-xl">
+                    <div class="absolute right-8 lg:-bottom-0 -bottom-2 md:bottom-0 text-xl">
                         <div class="text-black font-bold text-2xl flex my-4 hover:cursor-pointer">
                             Contact Us
                            
@@ -295,52 +302,18 @@ rasassiuk, ">
                         </div>
                     </div>
                 </div>
-                <div class="relative rounded-lg flex justify-center z-0">
-                    <div class="absolute z-20  lg:w-[350px] lg:h-[900px] w-[300px] overflow-hidden">
-                        <img src="./assets/images/restaurant1.png"
-                            class=" rounded-b-full h-[350px] w-full hover:rounded-b-full  object-cover transition-transform duration-600 hover:transform hover:scale-105 ">
-                    </div>
-                    <a href="#contact">
-                    <div class="absolute z-10  overflow-hidden">
-                        <img src="./assets/images/background2round.png" class=" rounded-lg object-cover ">
-                    </div>
-                    <div class="relative top-8">
-                        <img src="./assets/images/background2card.png">
-                    </div>
-                    </a>
-                    <div class="absolute z-10 lg:top-[400px] top-[360px]  md:bottom-0 text-xl">
-                        <div class="">
-                            <div class="flex justify-center text-yellow-400 font-extrabold lg:text-4xl text-2xl pb-5">
-                                Fine Dining
-                            </div>
-                            <div
-                                class="flex justify-center lg:w-80  text-white lg:text-xl text-base lg:p-0 p-3 lg:-my-0 -my-6">
-                                An ambiance of relaxed
-                                sophistication and a comfortable
-                                environment make Rasassi a place
-                                where you ...</div>
-                        </div>
-                    </div>
-                    <div class="absolute right-3 lg:-bottom-0 -bottom-2 md:bottom-0 text-xl">
-                        <div class="text-black font-bold text-2xl flex my-4 hover:cursor-pointer">
-                            Contact Us
-            
-                            <button role="button" class="pl-1"><i class="fa-solid fa-circle-chevron-right"
-                                    style="color: #ffffff;"></i></button>
-                        </div>
-                    </div>
-                </div>
+            </div>
             </div>
         </div>
     </section>
-    <section class="lg:py-20 bg-[url('./assets/images/google-review.jpg')]">
+    <section class="lg:py-20 lg:mt-0 mt-10 bg-[url('./assets/images/google-review.jpg')]">
         <img src="./assets/images/google+review.png" alt="" class="lg:h-28 lg:mx-[40%] mb-2">
         <div class="max-w-[90rem] lg:mx-auto ">
             <!-- <script type="text/javascript" src="https://testimonial.to/js/iframeResizer.min.js"></script>
             <iframe id='testimonialto-carousel-rasassi-google-review-tag-all-light' src="https://embed-v2.testimonial.to/carousel/all/rasassi-google-review?theme=light&autoplay=off&showmore=off&one-row=on&same-height=off&tag=all&arrowColor=9BA9B4" frameborder="0" scrolling="no" width="100%"></iframe>
             <script type="text/javascript">iFrameResize({log: false, checkOrigin: false}, '#testimonialto-carousel-rasassi-google-review-tag-all-light');</script> -->
             
-            <div class='sk-ww-google-reviews' data-embed-id='25368642'></div><script src='https://widgets.sociablekit.com/google-reviews/widget.js' async defer></script>
+            <!-- <div class='sk-ww-google-reviews' data-embed-id='25368642'></div><script src='https://widgets.sociablekit.com/google-reviews/widget.js' async defer></script> -->
         </div>
     </section>
     <!-- Awards card section -->
@@ -380,12 +353,12 @@ rasassiuk, ">
 
     </section>
     <!-- Footer -->
-    <footer class="bg-black text-white" id="contact">
+    <footer class="footer-section text-white" id="contact">
         <div class="container mx-auto px-4  pb-6">
             <div class="grid grid-cols lg:grid-cols-3 gap-4">
-                <div class="">
+                <div class="flex flex-col items-center justify-center">
                     <img src="./assets/images/logo.png" alt="" class="pt-14 h-32">
-                    <p class="text-white text-lg mt-4">Experience the most exquisite fine dinning restaurant in city</p>
+                    <p class="text-white text-lg mt-4 font-semibold">Experience the most exquisite <br> fine dinning restaurant in city</p>
                     <div class="pt-5 flex">
                         <div class="flex">
                             <button class="rounded-full bg-slate-800 text-white py-2 px-3 me-2"><img src="./assets/images/facebook (1).png" alt="" class="h-8 w-8 bg-white"></i></button>
@@ -397,32 +370,31 @@ rasassiuk, ">
                 </div>
                 <div class="py-10">
                     <p class="font-semibold  text-xl text-yellow-500">Open Hours :</p>
-                    <div class="grid grid-cols-2 gap-2 mt-4">
+                    <div class="grid grid-cols-2 gap-2 mt-4 font-semibold">
                         <p class="">Monday</p>
-                        <p>Closed</p>
+                        <p class="">Closed</p>
                         <p class="">Tuesday</p>
-                        <p>04:00 PM - 10:00 PM</p>
+                        <p class="">04:00 PM - 10:00 PM</p>
                         <p class="">Wednesday</p>
-                        <p>04:00 PM - 10:00 PM</p>
+                        <p class="">04:00 PM - 10:00 PM</p>
                         <p class="">Thursday</p>
-                        <p>04:00 PM - 10:00 PM</p>
+                        <p class="">04:00 PM - 10:00 PM</p>
                         <p class="">Friday</p>
-                        <p>04:00 PM - 10:30 PM</p>
+                        <p class="">04:00 PM - 10:30 PM</p>
                         <p class="">Saturday</p>
-                        <p>04:00 PM - 10:30 PM</p>
+                        <p class="">04:00 PM - 10:30 PM</p>
                         <p class="">Sunday</p>
-                        <p>04:00 PM - 10:00 PM</p>
+                        <p class="">04:00 PM - 10:00 PM</p>
                     </div>
                 </div>
                 <div>
-                    <p class="font-semibold lg:mb-12 text-xl"> </p>
-                    <div class="">
-                        <div class="text-yellow-500 font-semibold">Phone :</div>
-                        <div class="text-2xl font-semibold">0161 9281430</div>
-                        <div class="text-yellow-500 font-semibold">Email :</div>
-                        <div class="lg:text-2xl text-xl font-semibold">tablebooking@rasassiuk.com</div>
-                        <div class="text-yellow-500 font-semibold">Address :</div>
-                        <div class="lg:text-2xl text-xl font-semibold flex-wrap">21, The Downs, Altrincham, WA14 2QD</div>
+                    <div class="mx-auto py-10">
+                        <div class="text-yellow-500 font-semibold text-xl">Phone :</div>
+                        <div class="text-2xl font-semibold mb-5">0161 9281430</div>
+                        <div class="text-yellow-500 font-semibold text-xl">Email :</div>
+                        <div class="lg:text-2xl text-xl font-semibold mb-5">tablebooking@rasassiuk.com</div>
+                        <div class="text-yellow-500 font-semibold text-xl">Address :</div>
+                        <div class="lg:text-2xl text-xl font-semibold flex-wrap">21, The Downs, Altrincham,<br> WA14 2QD</div>
                     </div>
                 </div>
                 <div>

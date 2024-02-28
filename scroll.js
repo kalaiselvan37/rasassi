@@ -44,36 +44,15 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-    const menuCardButton = document.querySelector("#menuCardButton");
-    const iframeContainer = document.querySelector("#iframeContainer");
-    const pdfIframe = document.querySelector("#pdfIframe");
-    const closeIframeButton = document.querySelector("#closeIframe");
-    
-    menuCardButton.addEventListener("click", function () {
-        const pdfUrl = "./assets/Documents/Rasassi-NEW-MAIN-MENU.pdf";
-        pdfIframe.src = pdfUrl;
-        iframeContainer.classList.add("visible");
-    });
-
-    closeIframeButton.addEventListener("click", function () {
-        iframeContainer.classList.remove("visible"); 
-        pdfIframe.src = "";
-    });
-});
-
 document.addEventListener("DOMContentLoaded", function() {
-    const images = ["./assets/images/cardpic1.png"]; // Add your image paths here
-    let currentImageIndex = 0;
-    const carousel = document.querySelector('.carousel');
+    const items = document.querySelectorAll(".carousel-item");
+    let index = 0;
 
-    function showNextImage() {
-        currentImageIndex++;
-        if (currentImageIndex >= images.length) {
-            currentImageIndex = 0;
-        }
-        carousel.style.transform = `translateX(-${currentImageIndex * 100}%)`;
+    function nextSlide() {
+        items[index].classList.remove("active");
+        index = (index + 1) % items.length;
+        items[index].classList.add("active");
     }
 
-    setInterval(showNextImage, 5000); // Change image every 5 seconds
+    setInterval(nextSlide, 5000);
 });
