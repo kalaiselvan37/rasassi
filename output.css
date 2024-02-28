@@ -872,12 +872,36 @@ video {
   height: 100%;
 }
 
+.h-\[800px\] {
+  height: 800px;
+}
+
+.h-\[50px\] {
+  height: 50px;
+}
+
+.h-\[10px\] {
+  height: 10px;
+}
+
+.h-\[100px\] {
+  height: 100px;
+}
+
+.h-\[600px\] {
+  height: 600px;
+}
+
 .max-h-full {
   max-height: 100%;
 }
 
 .min-h-\[100vh\] {
   min-height: 100vh;
+}
+
+.min-h-\[800vh\] {
+  min-height: 800vh;
 }
 
 .w-10 {
@@ -934,22 +958,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[100px\] {
-  width: 100px;
-}
-
-.w-\[500px\] {
-  width: 500px;
-}
-
-.w-\[520px\] {
-  width: 520px;
-}
-
-.w-\[600px\] {
-  width: 600px;
 }
 
 .max-w-\[100rem\] {
@@ -1153,6 +1161,11 @@ video {
   background-image: url('./assets/images/google-review.jpg');
 }
 
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -1176,6 +1189,10 @@ video {
 
 .p-5 {
   padding: 1.25rem;
+}
+
+.p-32 {
+  padding: 8rem;
 }
 
 .px-0 {
@@ -1203,11 +1220,6 @@ video {
   padding-right: 1.5rem;
 }
 
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
 .py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
@@ -1231,6 +1243,11 @@ video {
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+}
+
+.py-14 {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
 }
 
 .pb-2 {
@@ -1422,7 +1439,7 @@ video {
   background-size: cover;
 }
 
-.homehotel1-section{
+.welocome-to-rasassi{
   background: linear-gradient(rgba(0, 0, 0, 0.603),rgba(11, 3, 3, 0.603)), url('./assets/images/cardpic1.png'), no-repeat;
   background-position: center;
   background-size: cover;
@@ -1629,22 +1646,6 @@ video {
     width: 700px;
   }
 
-  .lg\:w-\[520px\] {
-    width: 520px;
-  }
-
-  .lg\:w-full {
-    width: 100%;
-  }
-
-  .lg\:w-\[500px\] {
-    width: 500px;
-  }
-
-  .lg\:w-\[530px\] {
-    width: 530px;
-  }
-
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1703,6 +1704,11 @@ video {
   .lg\:py-8 {
     padding-top: 2rem;
     padding-bottom: 2rem;
+  }
+
+  .lg\:py-5 {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
   }
 
   .lg\:text-2xl {
