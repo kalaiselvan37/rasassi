@@ -872,36 +872,12 @@ video {
   height: 100%;
 }
 
-.h-\[800px\] {
-  height: 800px;
-}
-
-.h-\[50px\] {
-  height: 50px;
-}
-
-.h-\[10px\] {
-  height: 10px;
-}
-
-.h-\[100px\] {
-  height: 100px;
-}
-
-.h-\[600px\] {
-  height: 600px;
-}
-
 .max-h-full {
   max-height: 100%;
 }
 
 .min-h-\[100vh\] {
   min-height: 100vh;
-}
-
-.min-h-\[800vh\] {
-  min-height: 800vh;
 }
 
 .w-10 {
@@ -1161,11 +1137,6 @@ video {
   background-image: url('./assets/images/google-review.jpg');
 }
 
-.object-contain {
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -1189,10 +1160,6 @@ video {
 
 .p-5 {
   padding: 1.25rem;
-}
-
-.p-32 {
-  padding: 8rem;
 }
 
 .px-0 {
@@ -1243,11 +1210,6 @@ video {
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
-}
-
-.py-14 {
-  padding-top: 3.5rem;
-  padding-bottom: 3.5rem;
 }
 
 .pb-2 {
@@ -1686,11 +1648,6 @@ video {
     padding-bottom: 0.25rem;
   }
 
-  .lg\:py-10 {
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
-  }
-
   .lg\:py-14 {
     padding-top: 3.5rem;
     padding-bottom: 3.5rem;
@@ -1701,14 +1658,14 @@ video {
     padding-bottom: 5rem;
   }
 
-  .lg\:py-8 {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
-
   .lg\:py-5 {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
+  }
+
+  .lg\:py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
   .lg\:text-2xl {
