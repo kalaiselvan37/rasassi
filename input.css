@@ -52,3 +52,44 @@
   background-position: center;
   background-size: cover;
 }
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-button-next,.swiper-button-prev{
+  @apply !text-white py-12 px-6 bg-white  !text-lg !top-36
+}
+.swiper-button-prev{
+  @apply !left-0 rounded-r-xl
+}
+.swiper-button-next{
+  @apply !right-0 rounded-l-xl
+}
+
+.swiper-button-next:after, .swiper-button-prev:after{
+  font-size: 18px!important;
+}
+.mySwiper .swiper-pagination-bullet{
+ @apply !h-5 !w-5 !bg-white !border-[5px] !border-red-500  !opacity-40
+}
+.swiper-pagination-clickable .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  @apply !opacity-100
+}
