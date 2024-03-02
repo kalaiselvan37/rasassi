@@ -42,11 +42,11 @@
     background-size: cover;
 }
 .welocome-to-rasassi{
-    background: linear-gradient(rgba(0, 0, 0, 0.603),rgba(11, 3, 3, 0.603)), url('./assets/images/cardpic1.png'), no-repeat;
-    background-position: center;
-    background-size: cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.603),rgba(0, 0, 0, 0.603)), url('./assets/images/WhatsApp-Image-2022-10-17-at-9.25.35-PM.jpeg'), no-repeat;
+  background-position: center;
+  background-size: cover;
+  
 }
-
 .footer-section{
   background: linear-gradient(rgba(0, 0, 0, 0.603),rgba(40, 30, 30, 0.603)), url('./assets/images/footer1.png'), no-repeat;
   background-position: center;
