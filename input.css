@@ -9,11 +9,7 @@
     background-repeat: repeat-x; 
     background-size: auto 100%;
 }
-.tinos-regular {
-  font-family: "Tinos", serif;
-  font-weight: 400;
-  font-style: normal;
-}
+
 
   .satisfy-regular {
     font-family: "Satisfy", cursive;
@@ -95,7 +91,7 @@
 }
 
 
-/* Our Services */
+/* Our Services desktopview*/
 *{
   margin:0;
   padding:0;
@@ -106,14 +102,6 @@ body{ background:url(https://images.unsplash.com/photo-1495195129352-aeb325a55b6
   background-size:cover;
   background-position:right;
   background-attachment:fixed;
-}
-#header{
-  margin:20px;
-}
-#header>p{
-  text-align:center;
-  font-size:1.5rem;
-  font-style:italic;
 }
 .container{
   width:100vw;
@@ -143,7 +131,8 @@ body{ background:url(https://images.unsplash.com/photo-1495195129352-aeb325a55b6
   height:100%;
   object-fit:cover;
   object-position:bottom;
-  border-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 .card-text{
   margin:-30px auto;
@@ -154,9 +143,6 @@ body{ background:url(https://images.unsplash.com/photo-1495195129352-aeb325a55b6
   color:#fff;
   padding:20px;
   border-radius: 10px;
-}
-.card-meal-type{
-  font-style:italic;
 }
 .card-title{
   font-size:2.2rem;
@@ -180,4 +166,68 @@ body{ background:url(https://images.unsplash.com/photo-1495195129352-aeb325a55b6
   justify-content:center;
   align-items:center;
   border-radius: 8px;
+}
+
+/* Mobile View */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+.container1{
+  width:100vw;
+  display:flex;
+  justify-content:space-around;
+  flex-wrap:wrap;
+  padding:40px 20px;
+}
+.card1{
+  display:flex;
+  flex-direction:column;
+  width:400px;
+  margin-bottom:60px;
+}
+.card1>div{
+  box-shadow:0 15px 20px 0 rgba(0,0,0,0.5);
+}
+.card-image1{
+  width:400px;
+  height:250px;
+}
+.card-image1>img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:bottom;
+}
+.card-text1{
+  margin:-30px auto;
+  margin-bottom:-50px;
+  height:300px;
+  width:300px;
+  background-color:#1D1C20;
+  color:#fff;
+  padding:20px;
+}
+.card-meal-type1{
+  font-style:italic;
+}
+.card-title1{
+  font-size:2.2rem;
+  margin-bottom:20px;
+  margin-top:5px;
+}
+.card-body1{
+  font-size:1.25rem;
+}
+.card-price1{
+  width:200px;
+  height:100px;
+  background-color:#970C0A;
+  color:#fff;
+  margin-left:auto;
+  font-size:2rem;
+  display:flex;
+  justify-content:center;
+  align-items:center;
 }

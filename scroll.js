@@ -14,13 +14,6 @@ document.addEventListener("DOMContentLoaded", function () {
             behavior: 'smooth'
         });
     });
-    // Scroll to Home section
-    document.querySelector('a[href="#home"]').addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector('#home').scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
     // Scroll to Reserve now section
     document.querySelector('a[href="#reservenow"]').addEventListener('click', function (e) {
         e.preventDefault();
