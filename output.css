@@ -1538,12 +1538,12 @@ body{
 }
 
 .card-price1{
-  width:200px;
-  height:100px;
+  width:130px;
+  height:80px;
   background-color:#970C0A;
   color:#fff;
-  margin-left:auto;
-  font-size:2rem;
+  margin-left:200px;
+  font-size:1rem;
   display:flex;
   justify-content:center;
   align-items:center;
