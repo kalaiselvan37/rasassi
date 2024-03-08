@@ -213,7 +213,12 @@ body{ background:url(https://images.unsplash.com/photo-1495195129352-aeb325a55b6
   font-style:italic;
 }
 .card-title1{
-  font-size:2.2rem;
+  font-size:1.5rem;
+  margin-bottom:20px;
+  margin-top:5px;
+}
+.card-title2{
+  font-size:1.5rem;
   margin-bottom:20px;
   margin-top:5px;
 }
