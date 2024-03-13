@@ -175,8 +175,11 @@ body{ background:url(https://images.unsplash.com/photo-1495195129352-aeb325a55b6
   box-sizing:border-box;
 }
 .container1{
+  width:100vw;
+  display:flex;
   justify-content:space-around;
   flex-wrap:wrap;
+  padding:40px 20px;
 }
 .card1{
   display:flex;
@@ -188,7 +191,7 @@ body{ background:url(https://images.unsplash.com/photo-1495195129352-aeb325a55b6
   box-shadow:0 15px 20px 0 rgba(0,0,0,0.5);
 }
 .card-image1{
-  width:400px;
+  width:350px;
   height:250px;
 }
 .card-image1>img{

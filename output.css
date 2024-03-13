@@ -1481,8 +1481,11 @@ body{
 }
 
 .container1{
+  width:100vw;
+  display:flex;
   justify-content:space-around;
   flex-wrap:wrap;
+  padding:40px 20px;
 }
 
 .card1{
@@ -1497,7 +1500,7 @@ body{
 }
 
 .card-image1{
-  width:400px;
+  width:350px;
   height:250px;
 }
 
