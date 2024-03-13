@@ -1481,11 +1481,8 @@ body{
 }
 
 .container1{
-  width:100vw;
-  display:flex;
   justify-content:space-around;
   flex-wrap:wrap;
-  padding:40px 20px;
 }
 
 .card1{

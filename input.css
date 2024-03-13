@@ -175,11 +175,8 @@ body{ background:url(https://images.unsplash.com/photo-1495195129352-aeb325a55b6
   box-sizing:border-box;
 }
 .container1{
-  width:100vw;
-  display:flex;
   justify-content:space-around;
   flex-wrap:wrap;
-  padding:40px 20px;
 }
 .card1{
   display:flex;
