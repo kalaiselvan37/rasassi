@@ -1483,7 +1483,9 @@ body{
 .container1{
   width:100vw;
   display:flex;
+  justify-content:space-around;
   flex-wrap:wrap;
+  padding:40px 20px;
 }
 
 .card1{
@@ -1493,14 +1495,13 @@ body{
   margin-bottom:60px;
 }
 
-/* .card1>div{
+.card1>div{
   box-shadow:0 15px 20px 0 rgba(0,0,0,0.5);
-} */
+}
 
 .card-image1{
-  width:390px;
+  width:400px;
   height:250px;
-  padding: 5px;
 }
 
 .card-image1>img{
