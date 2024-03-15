@@ -236,3 +236,33 @@ body{ background:url(https://images.unsplash.com/photo-1495195129352-aeb325a55b6
   justify-content:center;
   align-items:center;
 }
+
+/* button 76 */
+.button-76 {
+  background-color: #fcd34d;
+  background-image:  #fcd34d;
+  border: 0;
+  box-sizing: border-box;
+  color: #101010;
+  cursor: pointer;
+  font-size: 1.125rem; /* 18px */
+  font-weight: 600;
+  line-height: 1.75rem; /* 28px */
+  padding: 1rem 1rem;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-76:hover {
+  box-shadow: none;
+}
+
+@media (min-width: 1024px) {
+  .button-76 {
+    font-size: 1.5rem; /* 24px */
+    padding: 1rem 1.5rem;
+    line-height: 2rem; /* 32px */
+  }
+}
