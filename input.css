@@ -98,7 +98,7 @@
   box-sizing:border-box;
   font-family:'Playfair Display', serif;
 }
-body{ background:url(https://images.unsplash.com/photo-1495195129352-aeb325a55b65?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1776&q=80);
+body{ background:url(./assets/images/bg-main-rasassi.png);
   background-size:cover;
   background-position:right;
   background-attachment:fixed;
@@ -239,8 +239,8 @@ body{ background:url(https://images.unsplash.com/photo-1495195129352-aeb325a55b6
 
 /* button 76 */
 .button-76 {
-  background-color: #fcd34d;
-  background-image:  #fcd34d;
+  background-color: #FDE047;
+  background-image:  #FDE047;
   border: 0;
   box-sizing: border-box;
   color: #101010;
@@ -265,4 +265,31 @@ body{ background:url(https://images.unsplash.com/photo-1495195129352-aeb325a55b6
     padding: 1rem 1.5rem;
     line-height: 2rem; /* 32px */
   }
+}
+/* Review Card Swiper */
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 20px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
