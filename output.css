@@ -1725,6 +1725,35 @@ body{
   background-color: rgb(253 224 71 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-slate-900:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-\[\#fddf47ba\]:hover {
+  background-color: #fddf47ba;
+}
+
+.hover\:bg-\[\#FDE047\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 224 71 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-\[\#a79e3f\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(167 158 63 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-\[\#f5db59\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 219 89 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-\[\#e7cf58\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(231 207 88 / var(--tw-bg-opacity));
+}
+
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
