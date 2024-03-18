@@ -1138,6 +1138,10 @@ video {
   padding: 0px;
 }
 
+.p-1 {
+  padding: 0.25rem;
+}
+
 .p-2 {
   padding: 0.5rem;
 }
@@ -1152,10 +1156,6 @@ video {
 
 .p-6 {
   padding: 1.5rem;
-}
-
-.p-1 {
-  padding: 0.25rem;
 }
 
 .px-0 {
@@ -1176,11 +1176,6 @@ video {
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
-}
-
-.py-2 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
 }
 
 .py-4 {
@@ -1299,9 +1294,9 @@ video {
   color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 
-.text-red-700 {
+.text-red-800 {
   --tw-text-opacity: 1;
-  color: rgb(185 28 28 / var(--tw-text-opacity));
+  color: rgb(153 27 27 / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -1668,6 +1663,37 @@ body{
   align-items: center;
 }
 
+.card-container {
+  height: 330px;
+}
+
+.description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  transition: -webkit-line-clamp 0.5s ease;
+}
+
+.description:focus {
+  overflow: visible;
+  text-overflow: initial;
+  -webkit-line-clamp: initial;
+}
+
+.read-more-btn {
+  border: none;
+  background: none;
+  color: #F87171;
+  cursor: pointer;
+  outline: none;
+}
+
+.description:focus + .read-more-btn {
+  display: none;
+}
+
 .hover\:bg-gray-100:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
@@ -1753,10 +1779,6 @@ body{
     background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   }
 
-  .md\:p-0 {
-    padding: 0px;
-  }
-
   .md\:py-2 {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
@@ -1817,6 +1839,10 @@ body{
 
   .lg\:h-\[30vh\] {
     height: 30vh;
+  }
+
+  .lg\:h-\[330px\] {
+    height: 330px;
   }
 
   .lg\:h-\[650px\] {
