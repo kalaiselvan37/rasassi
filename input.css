@@ -1,6 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 
 .cut-image{
     clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
@@ -10,12 +19,6 @@
     background-size: auto 100%;
 }
 
-
-  .satisfy-regular {
-    font-family: "Satisfy", cursive;
-    font-weight: 400;
-    font-style: normal;
-  }
   .active1 {
     color: rgb(192, 24, 24);
 
@@ -98,10 +101,12 @@
   box-sizing:border-box;
   font-family:'Playfair Display', serif;
 }
-body{ background:url(./assets/images/bg-main-rasassi.png);
+body{ background:url(./assets/images/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall.jpg);
   background-size:cover;
+  font-family: 'Poppins';
   background-position:right;
   background-attachment:fixed;
+  opacity: rgb(0, 0, 0);
 }
 .container{
   width:100vw;
