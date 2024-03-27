@@ -6,20 +6,19 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-document.addEventListener("DOMContentLoaded", function () {
+// Function to add background color to header on scroll
+function handleScroll() {
     var header = document.getElementById("header");
-    var lastScrollTop = 0;
-    window.addEventListener("scroll", function () {
-        var currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-        // If scrolled down and past the header's height, hide the header
-        if (currentScroll > lastScrollTop && currentScroll > header.offsetHeight / 2) {
-            header.classList.add("hidden-header");
-        } else {
-            header.classList.remove("hidden-header");
-        }
-        lastScrollTop = currentScroll;
-    });
-});
+    if (window.scrollY > 0) {
+        header.classList.add("bg-black");
+    } else {
+        header.classList.remove("bg-black");
+    }
+}
+
+// Event listener for scroll
+window.addEventListener("scroll", handleScroll);
+
 
 // Scroll to Contact section
 document.addEventListener("DOMContentLoaded", function () {
