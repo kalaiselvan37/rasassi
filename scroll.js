@@ -6,6 +6,21 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    var header = document.getElementById("header");
+    var lastScrollTop = 0;
+    window.addEventListener("scroll", function () {
+        var currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+        // If scrolled down and past the header's height, hide the header
+        if (currentScroll > lastScrollTop && currentScroll > header.offsetHeight / 2) {
+            header.classList.add("hidden-header");
+        } else {
+            header.classList.remove("hidden-header");
+        }
+        lastScrollTop = currentScroll;
+    });
+});
+
 // Scroll to Contact section
 document.addEventListener("DOMContentLoaded", function () {
     document.querySelector('a[href="#contact"]').addEventListener('click', function (e) {
@@ -28,26 +43,4 @@ document.addEventListener("DOMContentLoaded", function () {
             behavior: 'smooth'
         });
     });
-    // Scroll to menu section
-    document.querySelector('a[href="#menu"]').addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector('#menu').scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
 });
-
-document.addEventListener("DOMContentLoaded", function() {
-    const items = document.querySelectorAll(".carousel-item");
-    let index = 0;
-
-    function nextSlide() {
-        items[index].classList.remove("active");
-        index = (index + 1) % items.length;
-        items[index].classList.add("active");
-    }
-
-    setInterval(nextSlide, 5000);
-});
-
-
